@@ -1,0 +1,16 @@
+footer {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  padding: 0 0 24px;
+  line-height: 1.2rem;
+  
+  .ellipsis {
+    margin-left: 1px;
+    letter-spacing: 1px;
+  }
+
+  a:hover {
+    color: $link-color-hover;
+    border-color: $link-border-color-hover;
+  }
+}

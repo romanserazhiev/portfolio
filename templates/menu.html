@@ -1,0 +1,14 @@
+{% set navigation_bar = [
+  ('/', 'new', 'New'),
+  ('/works', 'works', 'Works'),
+  ('/blog/', 'blog', 'Blog')
+] -%}
+{% set active_page = active_page|default('new') -%}
+
+<div class="ml-auto col-3 index-menu">
+  <ul>
+    {% for href, id, caption in navigation_bar %}
+    <li{% if id == active_page %} class="active"{% endif %}><a href="{{ href|e }}">{{ caption|e }}</a></li>
+    {% endfor %}
+  </ul>
+</div>

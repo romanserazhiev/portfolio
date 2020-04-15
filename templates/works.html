@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% set active_page = "works" %}
+
+{# title of the main (index) page #}
+{% block title %}Roman Serazhiev works{% endblock title %}
+
+{# section with the list of works #}
+{% block content %}
+
+{# List of works #}
+{% include 'works_list.html' %}
+
+{% endblock content %}

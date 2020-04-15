@@ -1,0 +1,48 @@
+{% from "rows.html" import render_row %}
+
+{# List of works #}
+{{ render_row ([
+  {'item_count': 1,
+  'work_url': 'https://google.com',
+  'work_class': 'k15t-vr-summit',
+  'work_image_url_path': 'k15t/summit-vr-announce.png',
+  'work_date': 'March 31',
+  'work_title': 'Atlassian Virtual Summit',
+  'work_subtitle': 'Front-end development of&nbsp;the landing page'
+  },
+  {'item_count': 2,
+  'work_url': 'https://google.com',
+  'work_class': 'podcast-design-cover-01',
+  'work_image_url_path': 'podcasts/podcast-design-artwork-01.png',
+  'work_date': 'March 5',
+  'work_title': 'Cover for &laquo;Podcast Around Design&raquo;',
+  'work_subtitle': 'Graphical design for the first episode of&nbsp;the &laquo;Podcast Around Design&raquo;'
+  }]
+)}}
+
+{{ render_row ([
+  {'item_count': 1,
+  'work_url': 'https://google.com',
+  'work_class': 'podcast-design-cover',
+  'work_image_url_path': 'podcasts/interview_podcast_main.png',
+  'work_date': 'February 28',
+  'work_title': 'Cover for &laquo;Podcast Around Design&raquo;',
+  'work_subtitle': 'Graphical design for the &laquo;Podcast Around Design&raquo;'
+  },
+  {'item_count': 2,
+  'work_url': 'https://google.com',
+  'work_class': 'new-mac-leaflet',
+  'work_image_url_path': 'k15t/new-user-template.jpg',
+  'work_date': 'February 27',
+  'work_title': 'Leaflet for new computers',
+  'work_subtitle': 'Layout'
+  },
+  {'item_count': 3,
+  'work_url': '',
+  'work_class': '',
+  'work_image_url_path': '',
+  'work_date': '',
+  'work_title': '',
+  'work_subtitle': ''
+  }]
+)}}

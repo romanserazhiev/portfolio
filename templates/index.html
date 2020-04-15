@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% set active_page = "new" %}
+
+{# title of the main (index) page #}
+{% block title %}Roman Serazhiev works{% endblock title %}
+
+{# section about me #}
+{% block about_text %}
+
+  <div class="col-9 col-xl-7">
+    <h1 class="display-3">Hi.<br/> My&nbsp;name is <span class="my-name">Roman</span></h1>
+    <section>
+      <p>I&nbsp;am a&nbsp;designer, a&nbsp;developer, a&nbsp;customer service specialist and an&nbsp;Atlassian solutions specialist.</p>
+      <p>If&nbsp;you would like to&nbsp;talk about how&nbsp;I help you with your project, <a href="mailto:romanserazhiev@me.com">write an&nbsp;email</a> or&nbsp;<a href="https://t.me/romanserazhiev">send a&nbsp;message</a> in&nbsp;Telegram.</p>
+    </section>
+  </div>
+
+{% endblock about_text %}
+
+{# section with the list of works #}
+{% block content %}
+
+{# List of works #}
+{% include 'works_list.html' %}
+
+{% endblock content %}

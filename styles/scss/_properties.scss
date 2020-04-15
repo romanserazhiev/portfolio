@@ -1,0 +1,45 @@
+// Fonts
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../fonts/OpenSans-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../fonts/OpenSans-Bold.ttf") format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../fonts/OpenSans-BoldItalic.ttf") format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+// Font sizes
+$very-small: 0.6rem;
+$small: 0.8rem;
+$regular: 1rem;
+$large: 1.4rem;
+$very-large: 1.8rem;
+
+// Main colors
+$yellow-header: #CCCC00;
+$work-grey: linear-gradient(145deg,rgba(0,0,0,.03),rgba(0,0,0,.06)) center center/cover no-repeat;
+
+// Link colors
+$link-color: #000;
+$link-color-hover: #f41224;
+$link-border-color: rgba(0,0,0,.3);
+$link-border-color-hover: rgba(244,18,36,.3);
+$link-color-menu: #0060a0;
+$link-color-menu-border: rgba(0,96,160,0.3);
+$link-color-menu-background: rgba(0,96,160,.15);
+
+// Links settings
+$link-border-setting-with-color: 1px solid rgba(0,0,0,.3);
+$title-link-border-setting-with-color: 1px solid rgba(0,0,0,.1);
+
+//Paddings
+$page-top-padding: 2rem;
+$work-bottom-padding: 2rem;
+$about-intro-padding-bottom: 3rem;
