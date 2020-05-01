@@ -3,7 +3,10 @@
   ('/works', 'works', 'Works'),
   ('/blog/', 'blog', 'Blog')
 ] -%}
-{% set active_page = active_page|default('new') -%}
+{% set active_page = active_page -%}
+{# to have the default value, use this code:
+  {% set active_page = active_page|default('new') -%}
+#}
 
 <div class="ml-auto col-3 index-menu">
   <ul>
