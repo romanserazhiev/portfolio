@@ -17,6 +17,11 @@ def works():
 def atlassianVirtualSummit():
   return render_template("atlassian-virtual-summit.html")
 
+@app.route("/podcasts/around-design/ep1")
+def podcastAroundDesignEp1():
+  title = 'Graphical design for the first episode of the \"Podcast Around Design\"'
+  return render_template("podcast_cover.html", title=title)
+
 # setting the static folder to root of the website when running in DEBUG (on local machine)
 # in PROD static resources should be handled by Apache or Nginx
 if app.config['DEBUG']:

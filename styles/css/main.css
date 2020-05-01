@@ -8252,7 +8252,7 @@ h3 {
 body {
   font-family: "Open Sans", sans-serif;
 }
-body .container a {
+body .container a, body .container-fluid a {
   text-decoration: none;
   color: #000;
   border-color: rgba(0, 0, 0, 0.3);
@@ -8260,21 +8260,21 @@ body .container a {
   -webkit-transition: color 0.3s ease, border-color 0.3s ease;
   transition: color 0.3s ease, border-color 0.3s ease;
 }
-body .container .intro {
+body .container .intro, body .container-fluid .intro {
   padding-top: 2rem;
   padding-bottom: 3rem;
 }
-body .container .intro h1 {
+body .container .intro h1, body .container-fluid .intro h1 {
   font-size: 4rem;
 }
-body .container .intro h1 .my-name {
+body .container .intro h1 .my-name, body .container-fluid .intro h1 .my-name {
   color: #CCCC00;
 }
-body .container .intro a:hover {
+body .container .intro a:hover, body .container-fluid .intro a:hover {
   color: #f41224;
   border-color: rgba(244, 18, 36, 0.3);
 }
-body .container .work-announce {
+body .container .work-announce, body .container-fluid .work-announce {
   overflow: hidden;
   position: relative;
   padding-bottom: 3rem;
@@ -8285,50 +8285,50 @@ body .container .work-announce {
   text-align: left;
   vertical-align: top;
 }
-body .container .work-announce img {
+body .container .work-announce img, body .container-fluid .work-announce img {
   display: block;
   transition: all 0.8s cubic-bezier(0, 0, 0, 1);
   width: 100%;
   height: 100%;
 }
-body .container .work-announce .announce-text {
+body .container .work-announce .announce-text, body .container-fluid .work-announce .announce-text {
   padding-top: 0.75rem;
 }
-body .container .work-announce .announce-text .date {
+body .container .work-announce .announce-text .date, body .container-fluid .work-announce .announce-text .date {
   opacity: 0.3;
   font-size: 0.9em;
   margin-top: 0.2em;
   margin-bottom: 0.1em;
 }
-body .container .work-announce .announce-text .announce-title {
+body .container .work-announce .announce-text .announce-title, body .container-fluid .work-announce .announce-text .announce-title {
   font-size: 2em;
   line-height: 1.34;
 }
-body .container .work-announce .announce-text .announce-title span {
+body .container .work-announce .announce-text .announce-title span, body .container-fluid .work-announce .announce-text .announce-title span {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-transition: color 0.3s ease, border-color 0.3s ease;
   transition: color 0.3s ease, border-color 0.3s ease;
 }
-body .container .work-announce .announce-text .announce-subtitle {
+body .container .work-announce .announce-text .announce-subtitle, body .container-fluid .work-announce .announce-text .announce-subtitle {
   opacity: 0.5;
   display: block;
 }
-body .container .work-announce:hover img {
+body .container .work-announce:hover img, body .container-fluid .work-announce:hover img {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
 }
-body .container .work-announce:hover .announce-title span {
+body .container .work-announce:hover .announce-title span, body .container-fluid .work-announce:hover .announce-title span {
   color: #f41224;
   border-color: rgba(244, 18, 36, 0.3);
 }
-body .container .preview {
+body .container .preview, body .container-fluid .preview {
   position: relative;
   overflow: hidden;
   display: block;
   border: none;
 }
-body .container .preview:after {
+body .container .preview:after, body .container-fluid .preview:after {
   content: "";
   display: block;
   position: absolute;
@@ -8488,6 +8488,60 @@ footer a:hover {
 }
 .credits .dev-list {
   list-style: none;
+}
+
+.big-background {
+  background-image: url("../../images/works/podcasts/podcast_words.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 500px;
+}
+.big-background .giant {
+  font-size: 3rem;
+  padding-bottom: 6rem;
+}
+@media (min-width: 576px) {
+  .big-background .giant {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 768px) {
+  .big-background .giant {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 992px) {
+  .big-background .giant {
+    font-size: 6rem;
+  }
+}
+.big-background .podcast-main-image {
+  margin-bottom: 3em;
+}
+.big-background .podcast-main-image .podcast-cover-image-iphone {
+  width: 350px;
+  margin-bottom: 5em;
+}
+.big-background .podcast-main-image .download-podcast-cover-link {
+  font-size: 3rem;
+}
+.big-background .podcast-main-image a:hover {
+  color: #f41224;
+  border-color: rgba(244, 18, 36, 0.3);
+}
+.big-background .podcast-iphone-cell {
+  text-align: center;
+}
+.big-background .podcast-words img {
+  max-height: 500px;
+}
+
+.podcast-cover-image {
+  width: 300px;
+}
+
+.black-background {
+  background-color: #000;
 }
 
 /*# sourceMappingURL=main.css.map */
