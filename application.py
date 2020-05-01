@@ -6,11 +6,16 @@ app = Flask(__name__)
 # flask routes
 @app.route("/")
 def index():
-  return render_template("index.html")
+  tshirts = ['cat_tshirt.png', 'lama_tshirt.png']
+  return render_template("index.html", tshirts=tshirts)
 
 @app.route("/works")
 def works():
   return render_template("works.html")
+
+@app.route("/k15t/atlassian-virtual-summit")
+def atlassianVirtualSummit():
+  return render_template("atlassian-virtual-summit.html")
 
 # setting the static folder to root of the website when running in DEBUG (on local machine)
 # in PROD static resources should be handled by Apache or Nginx
