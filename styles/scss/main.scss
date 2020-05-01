@@ -1,6 +1,12 @@
 @charset 'utf-8';
 
+// Bootstrap SCSS
+@import '../libraries/bootstrap/scss/bootstrap';
+
 @import 'properties';
 @import 'main-page';
 @import 'menu';
+@import 'highlight';
 @import 'footer';
+
+@import 'atlassian-virtual-summit';

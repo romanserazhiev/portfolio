@@ -1,0 +1,66 @@
+.row-gradient {
+  background: linear-gradient(233deg, #243766, #ca5d2b);
+  background-size: 400% 400%;
+
+  -webkit-animation: row-gradient 7s ease infinite;
+  -moz-animation: row-gradient 7s ease infinite;
+  animation: row-gradient 7s ease infinite;
+
+  @-webkit-keyframes row-gradient {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @-moz-keyframes row-gradient {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @keyframes row-gradient { 
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+
+  .row:last-child {
+    padding-bottom: 6rem;
+  }
+
+  .giant-white {
+    color: white;
+    font-size: 3rem;
+    padding-bottom: 6rem;
+  }
+
+  @include media-breakpoint-up(sm) {
+    .giant-white {
+      font-size: 4rem;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    .giant-white {
+      font-size: 6rem;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    .giant-white {
+      font-size: 8rem;
+    }
+  }
+
+  .video-in-row {
+    width: 100%;
+  }
+}
+
+.credits {
+  
+  padding: 1rem 0 0 1rem;
+  
+  .dev-list {
+    list-style: none;
+  }
+}
+

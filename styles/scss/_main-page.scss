@@ -1,7 +1,9 @@
 body {
   
+  font-family: "Open Sans", sans-serif;
 
   .container {
+
     a {
       text-decoration: none;
       color: $link-color;
@@ -11,7 +13,7 @@ body {
       transition: color .3s ease, border-color .3s ease;
     }
     .intro {
-      font-family: "Open Sans", sans-serif;
+      //font-family: inherit;
       h1 {
         .my-name {
           color: $yellow-header;
@@ -27,7 +29,7 @@ body {
       padding-bottom: $about-intro-padding-bottom;
     }
     .work-announce{
-      font-family: "Open Sans", sans-serif;
+      //font-family: inherit;
       img {
         display: block;
 	      transition: all .8s cubic-bezier(0,0,0,1);
