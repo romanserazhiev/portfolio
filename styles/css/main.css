@@ -8490,49 +8490,47 @@ footer a:hover {
   list-style: none;
 }
 
-.big-background {
-  background-image: url("../../images/works/podcasts/podcast_words.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 500px;
-}
-.big-background .giant {
+.big-background .announce-title-black {
   font-size: 3rem;
-  padding-bottom: 6rem;
+  background: #fff;
+  padding: 4px 16px 2rem;
 }
 @media (min-width: 576px) {
-  .big-background .giant {
+  .big-background .announce-title-black {
     font-size: 3rem;
   }
 }
 @media (min-width: 768px) {
-  .big-background .giant {
+  .big-background .announce-title-black {
     font-size: 4rem;
   }
 }
 @media (min-width: 992px) {
-  .big-background .giant {
+  .big-background .announce-title-black {
     font-size: 6rem;
   }
 }
-.big-background .podcast-main-image {
+
+.podcast-main-image {
   margin-bottom: 3em;
 }
-.big-background .podcast-main-image .podcast-cover-image-iphone {
-  width: 350px;
+.podcast-main-image .podcast-cover-image-iphone {
+  max-width: 350px;
   margin-bottom: 5em;
 }
-.big-background .podcast-main-image .download-podcast-cover-link {
-  font-size: 3rem;
+.podcast-main-image .download-podcast-cover-link {
+  font-size: 1rem;
 }
-.big-background .podcast-main-image a:hover {
+.podcast-main-image a:hover {
   color: #f41224;
   border-color: rgba(244, 18, 36, 0.3);
 }
-.big-background .podcast-iphone-cell {
+
+.podcast-iphone-cell {
   text-align: center;
 }
-.big-background .podcast-words img {
+
+.podcast-words img {
   max-height: 500px;
 }
 

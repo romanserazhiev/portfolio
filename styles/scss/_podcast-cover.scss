@@ -1,43 +1,41 @@
 .big-background{
-
-  background-image: url("../../images/works/podcasts/podcast_words.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 500px;
   
-  .giant {
+  .announce-title-black {
     font-size: 3rem;
-    padding-bottom: 6rem;
+    background: #fff;
+    padding: 4px 16px 2rem;
   }
 
   @include media-breakpoint-up(sm) {
-    .giant {
+    .announce-title-black {
       font-size: 3rem;
     }
   }
 
   @include media-breakpoint-up(md) {
-    .giant {
+    .announce-title-black {
       font-size: 4rem;
     }
   }
 
   @include media-breakpoint-up(lg) {
-    .giant {
+    .announce-title-black {
       font-size: 6rem;
     }
   }
+}
+  
 
   .podcast-main-image {
     margin-bottom: 3em;
 
     .podcast-cover-image-iphone {
-      width: 350px;
+      max-width: 350px;
       margin-bottom: 5em;
     }
 
     .download-podcast-cover-link {
-      font-size: 3rem;
+      font-size: 1rem;
     }
 
     a:hover {
@@ -55,7 +53,7 @@
       max-height: 500px;
     }
   }
-}
+
 
   .podcast-cover-image {
     width: 300px;
