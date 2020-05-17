@@ -8514,32 +8514,26 @@ footer a:hover {
 .podcast-main-image {
   margin-bottom: 3em;
 }
-.podcast-main-image .podcast-cover-image-iphone {
+.podcast-main-image .podcast-iphone-cell {
+  text-align: center;
+}
+.podcast-main-image .podcast-iphone-cell .podcast-cover-image-iphone {
   max-width: 350px;
   margin-bottom: 5em;
 }
-.podcast-main-image .download-podcast-cover-link {
+.podcast-main-image .podcast-downloads-list ul {
+  line-height: 2em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+.podcast-main-image .podcast-downloads-list ul .download-podcast-cover-link {
   font-size: 1rem;
 }
-.podcast-main-image a:hover {
+.podcast-main-image .podcast-downloads-list ul a:hover {
   color: #f41224;
   border-color: rgba(244, 18, 36, 0.3);
-}
-
-.podcast-iphone-cell {
-  text-align: center;
-}
-
-.podcast-words img {
-  max-height: 500px;
-}
-
-.podcast-cover-image {
-  width: 300px;
-}
-
-.black-background {
-  background-color: #000;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -19,8 +19,14 @@ def atlassianVirtualSummit():
 
 @app.route("/podcasts/around-design/ep1")
 def podcastAroundDesignEp1():
-  title = 'Graphical design for the first episode of the \"Podcast Around Design\"'
+  title = 'Graphical design for the first episode of the \u00ABPodcast Around Design\u00BB'
+  return render_template("podcast_cover_ep1.html", title=title)
+
+@app.route("/podcasts/around-design/cover")
+def podcastAroundDesignCover():
+  title = 'Graphical design for the \u00ABPodcast Around Design\u00BB cover'
   return render_template("podcast_cover.html", title=title)
+  
 
 # setting the static folder to root of the website when running in DEBUG (on local machine)
 # in PROD static resources should be handled by Apache or Nginx

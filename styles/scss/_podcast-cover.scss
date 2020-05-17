@@ -26,39 +26,34 @@
 }
   
 
-  .podcast-main-image {
-    margin-bottom: 3em;
+.podcast-main-image {
+  margin-bottom: 3em;
+
+  .podcast-iphone-cell {
+    text-align: center;
 
     .podcast-cover-image-iphone {
       max-width: 350px;
       margin-bottom: 5em;
     }
+  }
 
-    .download-podcast-cover-link {
-      font-size: 1rem;
+  .podcast-downloads-list {
+    ul {
+      line-height: 2em;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+
+      .download-podcast-cover-link {
+        font-size: 1rem;
+      }
+
+      a:hover {
+        color: $link-color-hover;
+        border-color: $link-border-color-hover;
+      }
     }
-
-    a:hover {
-      color: $link-color-hover;
-      border-color: $link-border-color-hover;
-    }
   }
-
-  .podcast-iphone-cell {
-    text-align: center;
-  }
-
-  .podcast-words {
-    img {
-      max-height: 500px;
-    }
-  }
-
-
-  .podcast-cover-image {
-    width: 300px;
-  }
-
-  .black-background {
-    background-color: $black;
-  }
+}
