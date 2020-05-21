@@ -4,8 +4,13 @@
 
     {# CSS and JS links #}
     <link rel="stylesheet" href="../../styles/css/main.css">
-    <link rel="stylesheet" href="../../styles/libraries/bootstrap.css">
     <script src="../../styles/libraries/jquery-3.4.1.slim.min.js"></script>
+    
+    {# Vue.js #}
+    {# dev version #}
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    {# production version #}
+    {# <script src="https://cdn.jsdelivr.net/npm/vue"></script> #}
     
     {# additional CSS and JS files #}
     {% block head %}{% endblock head %}
@@ -17,8 +22,11 @@
   <body>
     <div class="container">
       <div class="row intro">
-      
-        {% block about_text%}{% endblock about_text %}
+        
+        {# don't like the way it looks, commenting out for now #}
+        {# {% block index_photo %}{% endblock index_photo %} #}
+
+        {% block about_text %}{% endblock about_text %}
         {% include 'menu.html' %}
        
       </div>

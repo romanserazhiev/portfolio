@@ -7,23 +7,24 @@
 <div class="row">
 {% for work in works %}
 
-{# Checking if each of the works has a defined URL. If not, this work announcement won't be published #}
-{% if work.work_url != '' %}
+{# Checking if the amount of 'item_count' is 1. If yes, this work occupies full width of the screen #}
+{% if works|selectattr('item_count')|list|length == 1 %}
+  <div class="col-md-12 work-announce">
 
 {# Checking if the amount of 'item_count' is 2. If yes, each work occupies half of the screen starting with medium screen size #}
-{% if works|selectattr('item_count')|list|length == 2 %}
+{% elif works|selectattr('item_count')|list|length == 2 %}
   <div class="col-md-6 work-announce">
 
 {# Checking if the amount of 'item_count' is 3. If yes, each work occupies a third of the screen starting with medium screen size #}
 {% elif works|selectattr('item_count')|list|length == 3 %}
   <div class="col-md-4 work-announce">
   {% endif %}
-    <a href="{{ work.work_url }}">
+    <a href="{{ work.work_url }}" {% if work.work_url == '' %}class="not-active"{% endif %}>
       <div class="preview {{ work.work_class }}">
         <img src="../images/works/{{ work.work_image_url_path }}"/>
       </div>
       <div class="announce-text">
-        <div class="date">{{ work.work_date }}</div>
+        <div class="date">{{ work.work_date|safe }}</div>
         <h1 class="announce-title">
           <span>{{ work.work_title|safe }}</span>
         </h1> 
@@ -31,7 +32,6 @@
       </div>
     </a>
   </div>
-  {% endif %}
 {% endfor %}
 </div>  
 {%- endmacro %}

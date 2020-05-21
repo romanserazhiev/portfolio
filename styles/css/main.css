@@ -8285,6 +8285,28 @@ body .container .work-announce, body .container-fluid .work-announce {
   text-align: left;
   vertical-align: top;
 }
+body .container .work-announce a.not-active, body .container-fluid .work-announce a.not-active {
+  color: #000;
+  border-color: rgba(0, 0, 0, 0.3);
+  border-bottom: none;
+  cursor: default;
+  pointer-events: none;
+  display: block;
+}
+body .container .work-announce a.not-active span:hover, body .container-fluid .work-announce a.not-active span:hover {
+  color: #000;
+  border-color: rgba(244, 18, 36, 0.3);
+}
+body .container .work-announce a.not-active:hover, body .container-fluid .work-announce a.not-active:hover {
+  color: #000;
+}
+body .container .work-announce a.not-active .announce-title span, body .container-fluid .work-announce a.not-active .announce-title span {
+  border-bottom: none;
+  color: #000;
+}
+body .container .work-announce .slim, body .container-fluid .work-announce .slim {
+  height: 20rem;
+}
 body .container .work-announce img, body .container-fluid .work-announce img {
   display: block;
   transition: all 0.8s cubic-bezier(0, 0, 0, 1);
@@ -8317,6 +8339,11 @@ body .container .work-announce:hover img, body .container-fluid .work-announce:h
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
+}
+body .container .work-announce:hover .not-active img, body .container-fluid .work-announce:hover .not-active img {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
 }
 body .container .work-announce:hover .announce-title span, body .container-fluid .work-announce:hover .announce-title span {
   color: #f41224;

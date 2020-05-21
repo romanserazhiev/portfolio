@@ -12,6 +12,7 @@ body {
       -webkit-transition: color .3s ease, border-color .3s ease;
       transition: color .3s ease, border-color .3s ease;
     }
+
     .intro {
       //font-family: inherit;
       h1 {
@@ -28,8 +29,37 @@ body {
       padding-top: $page-top-padding;
       padding-bottom: $about-intro-padding-bottom;
     }
-    .work-announce{
+    .work-announce {
       //font-family: inherit;
+
+      a.not-active {
+        color: $not-active-link-color;
+        border-color: $link-border-color;
+        border-bottom: none;
+        cursor: default;
+        pointer-events: none;
+        display: block;
+
+        span:hover {
+          color: $not-active-link-color;
+          border-color: $link-border-color-hover;
+        }
+  
+        &:hover {
+          color: $not-active-link-color;
+        }
+
+        .announce-title {
+          span {
+            border-bottom: none;
+            color: $not-active-link-color;
+          }
+        }
+      }
+
+      .slim {
+        height: 20rem;
+      }
       img {
         display: block;
 	      transition: all .8s cubic-bezier(0,0,0,1);
@@ -74,6 +104,12 @@ body {
       -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
       transform: scale(1.05);
+    }
+
+    .work-announce:hover .not-active img {
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
     }
 
     .work-announce:hover .announce-title span {
