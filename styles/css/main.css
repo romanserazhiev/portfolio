@@ -8293,16 +8293,16 @@ body .container .work-announce a.not-active, body .container-fluid .work-announc
   pointer-events: none;
   display: block;
 }
-body .container .work-announce a.not-active span:hover, body .container-fluid .work-announce a.not-active span:hover {
-  color: #000;
-  border-color: rgba(244, 18, 36, 0.3);
+body .container .work-announce a.not-active img, body .container-fluid .work-announce a.not-active img {
+  filter: grayscale(100%);
 }
-body .container .work-announce a.not-active:hover, body .container-fluid .work-announce a.not-active:hover {
-  color: #000;
+body .container .work-announce a.not-active span:hover, body .container-fluid .work-announce a.not-active span:hover {
+  border-color: rgba(244, 18, 36, 0.3);
 }
 body .container .work-announce a.not-active .announce-title span, body .container-fluid .work-announce a.not-active .announce-title span {
   border-bottom: none;
   color: #000;
+  opacity: 0.5;
 }
 body .container .work-announce .slim, body .container-fluid .work-announce .slim {
   height: 20rem;
@@ -8340,17 +8340,17 @@ body .container .work-announce .announce-text .announce-subtitle, body .containe
   opacity: 0.5;
   display: block;
 }
-body .container .work-announce:hover img, body .container-fluid .work-announce:hover img {
+body .container .work-announce > a:hover img, body .container-fluid .work-announce > a:hover img {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
 }
-body .container .work-announce:hover .not-active img, body .container-fluid .work-announce:hover .not-active img {
+body .container .work-announce > a:hover .not-active img, body .container-fluid .work-announce > a:hover .not-active img {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
 }
-body .container .work-announce:hover .announce-title span, body .container-fluid .work-announce:hover .announce-title span {
+body .container .work-announce > a:hover .announce-title span, body .container-fluid .work-announce > a:hover .announce-title span {
   color: #f41224;
   border-color: rgba(244, 18, 36, 0.3);
 }
@@ -8371,6 +8371,17 @@ body .container .preview:after, body .container-fluid .preview:after {
   background: linear-gradient(145deg, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.06)) center center/cover no-repeat;
   pointer-events: none;
   z-index: 2;
+}
+body .container .k15t-user-group, body .container-fluid .k15t-user-group {
+  position: relative;
+  padding-bottom: 56%;
+}
+body .container .k15t-user-group iframe, body .container .k15t-user-group object, body .container .k15t-user-group embed, body .container-fluid .k15t-user-group iframe, body .container-fluid .k15t-user-group object, body .container-fluid .k15t-user-group embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .index-menu ul {

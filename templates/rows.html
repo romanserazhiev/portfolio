@@ -21,7 +21,11 @@
   {% endif %}
     <a href="{{ work.work_url }}" {% if work.work_url == '' %}class="not-active"{% endif %}>
       <div class="preview {{ work.work_class }}">
-        <img src="../images/works/{{ work.work_image_url_path }}"/>
+        {% if work.work_type is defined %}
+          {{ work.work_video_code|safe }}
+        {% else %}
+          <img src="../images/works/{{ work.work_image_url_path }}"/>
+        {% endif %}
       </div>
       <div class="announce-text">
         <div class="date">{{ work.work_date|safe }}</div>
