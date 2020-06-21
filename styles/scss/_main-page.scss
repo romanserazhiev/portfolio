@@ -141,16 +141,40 @@ body {
       }
     }
     
-    .k15t-user-group {
+    .k15t {
+      &-user-group {
       position: relative;
       padding-bottom: 56%; 
 
-      iframe, object, embed {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        iframe, object, embed {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &-product-webinar {
+        img {
+          height: 80%;
+          position: relative;
+          top: 30px;
+        }
+      }
+
+      &-team-up-forum {
+        img {
+          padding: 20px;
+        }
+      }
+
+      &-support {
+        background-color: black;
+
+        img {
+          padding: 2em;
+        }
       }
     }
   }

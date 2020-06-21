@@ -8383,6 +8383,20 @@ body .container .k15t-user-group iframe, body .container .k15t-user-group object
   width: 100%;
   height: 100%;
 }
+body .container .k15t-product-webinar img, body .container-fluid .k15t-product-webinar img {
+  height: 80%;
+  position: relative;
+  top: 30px;
+}
+body .container .k15t-team-up-forum img, body .container-fluid .k15t-team-up-forum img {
+  padding: 20px;
+}
+body .container .k15t-support, body .container-fluid .k15t-support {
+  background-color: black;
+}
+body .container .k15t-support img, body .container-fluid .k15t-support img {
+  padding: 2em;
+}
 
 .index-menu ul {
   line-height: 2em;
