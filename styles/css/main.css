@@ -8252,6 +8252,11 @@ h3 {
 body {
   font-family: "Open Sans", sans-serif;
 }
+body .image-description {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+}
 body .container a, body .container-fluid a {
   text-decoration: none;
   color: #000;
@@ -8259,6 +8264,32 @@ body .container a, body .container-fluid a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: color 0.3s ease, border-color 0.3s ease;
   transition: color 0.3s ease, border-color 0.3s ease;
+}
+body .container a:hover, body .container-fluid a:hover {
+  color: #f41224;
+  border-color: rgba(244, 18, 36, 0.3);
+}
+body .container .giant, body .container-fluid .giant {
+  font-size: 3rem;
+  padding-bottom: 6rem;
+}
+body .container .giant-white, body .container-fluid .giant-white {
+  color: white;
+}
+@media (min-width: 576px) {
+  body .container .giant, body .container-fluid .giant {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 768px) {
+  body .container .giant, body .container-fluid .giant {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 992px) {
+  body .container .giant, body .container-fluid .giant {
+    font-size: 8rem;
+  }
 }
 body .container .intro, body .container-fluid .intro {
   padding-top: 2rem;
@@ -8270,10 +8301,6 @@ body .container .intro h1, body .container-fluid .intro h1 {
 body .container .intro h1 .my-name, body .container-fluid .intro h1 .my-name {
   color: #CCCC00;
 }
-body .container .intro a:hover, body .container-fluid .intro a:hover {
-  color: #f41224;
-  border-color: rgba(244, 18, 36, 0.3);
-}
 body .container .work-announce, body .container-fluid .work-announce {
   overflow: hidden;
   position: relative;
@@ -8284,6 +8311,9 @@ body .container .work-announce, body .container-fluid .work-announce {
   border: none;
   text-align: left;
   vertical-align: top;
+}
+body .container .work-announce a:hover, body .container-fluid .work-announce a:hover {
+  color: black;
 }
 body .container .work-announce a.not-active, body .container-fluid .work-announce a.not-active {
   color: #000;
@@ -8516,26 +8546,6 @@ footer a:hover {
 .row-gradient .row:last-child {
   padding-bottom: 6rem;
 }
-.row-gradient .giant-white {
-  color: white;
-  font-size: 3rem;
-  padding-bottom: 6rem;
-}
-@media (min-width: 576px) {
-  .row-gradient .giant-white {
-    font-size: 4rem;
-  }
-}
-@media (min-width: 768px) {
-  .row-gradient .giant-white {
-    font-size: 6rem;
-  }
-}
-@media (min-width: 992px) {
-  .row-gradient .giant-white {
-    font-size: 8rem;
-  }
-}
 .row-gradient .video-in-row {
   width: 100%;
 }
@@ -8591,6 +8601,40 @@ footer a:hover {
 .podcast-main-image .podcast-downloads-list ul a:hover {
   color: #f41224;
   border-color: rgba(244, 18, 36, 0.3);
+}
+
+.description-company {
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+  opacity: 0.5;
+}
+.description-company p {
+  margin-bottom: 1rem;
+}
+.description-company p:last-of-type {
+  margin-bottom: 0;
+}
+.description-role {
+  font-size: 1.4rem;
+}
+@media (min-width: 576px) {
+  .description-role {
+    font-size: 1.2rem;
+  }
+}
+.description-role img {
+  margin-top: 8px;
+  width: 100%;
+}
+.description-role ul {
+  line-height: 1.8rem;
+  list-style-type: none;
+  max-width: 700px;
+  padding: 0 0 0 40px;
+}
+.description-role ul li {
+  margin: 0 0 10px 0;
+  text-indent: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

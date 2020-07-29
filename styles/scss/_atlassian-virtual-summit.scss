@@ -26,30 +26,6 @@
     padding-bottom: 6rem;
   }
 
-  .giant-white {
-    color: white;
-    font-size: 3rem;
-    padding-bottom: 6rem;
-  }
-
-  @include media-breakpoint-up(sm) {
-    .giant-white {
-      font-size: 4rem;
-    }
-  }
-  
-  @include media-breakpoint-up(md) {
-    .giant-white {
-      font-size: 6rem;
-    }
-  }
-  
-  @include media-breakpoint-up(lg) {
-    .giant-white {
-      font-size: 8rem;
-    }
-  }
-
   .video-in-row {
     width: 100%;
   }

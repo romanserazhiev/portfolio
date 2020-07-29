@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{# title of the page #}
+{% block title %}{{ title }}{% endblock title %}
+
+{# section with the list of works #}
+{% block content %}
+
+    <div class="row role-title">
+        <h1 class="giant display-1 announce-title-black text-center">Support Engineer at&nbsp;Catch Software</h1>
+    </div>
+    <div class="row description-company">
+        <div class="col-md-12">
+            <span><a href="https://catchsoftware.com">Catch Software</a> are the developers of&nbsp;testing management tool Enterprise Tester and one of&nbsp;50&nbsp;<a href="https://www.atlassian.com/resources/partnerList.html">Platinum Atlassian Experts</a> in&nbsp;the world.</span>
+        </div>
+    </div>
+    <div class="row justify-content-between description-role">
+        <div class="col-lg-6">
+            <span>Duties</span>
+            <ul>
+                <li>
+                    responsible for triaging, prioritizing and answering support tickets that came from customers of&nbsp;<a href="https://catchsoftware.com/testing-tools/enterprise-tester">Enterprise&nbsp;Tester</a>, <a href="http://www.sparxsystems.co.nz">Enterprise&nbsp;Architect</a>, <a href="http://catchsoftware.com/sparx-systems/screen-architect">Screen&nbsp;Architect</a>, EA2QC;
+                </li>
+                <li>
+                    every customer's support request had to be tested and, if necessary, escalated for the Development Team to fix or implement;
+                </li>
+                <li>
+                    helping testing team with manual testing, which allowed quicker bug fixing, shorter development cycle.
+                </li>
+            </ul>
+            <span>Achievements</span>
+            <ul>
+                <li>
+                    amount of outstanding support tickets decreased by 50%;
+                </li>
+                <li>
+                    helped the QA team with testing&nbsp;&rarr;&nbsp;we were able to push more bug fixes to the next Enterprise Tester release;
+                </li>
+                <li>
+                    as part of the "SEN project", successfully created SENs for every single user of Enterprise Tester and notified them.
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-5">
+            <img src="../images/works/catch/catch_support_workplace.jpg"/>
+            <p class="image-description">My work place, April 2013</p>
+            <img src="../images/works/catch/catch_support_wall_of_fame.jpg"/>
+            <p class="image-description">Catch Support wall of fame, July 2013</p>
+        </div>
+    </div>
+
+{% endblock content %}
