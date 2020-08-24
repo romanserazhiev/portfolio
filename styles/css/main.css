@@ -8389,6 +8389,7 @@ body .container .preview, body .container-fluid .preview {
   overflow: hidden;
   display: block;
   border: none;
+  box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.1);
 }
 body .container .preview:after, body .container-fluid .preview:after {
   content: "";

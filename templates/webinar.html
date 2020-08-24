@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{# title of the page #}
+{% block title %}Product webinar for K15t{% endblock title %}
+
+{# section with the list of works #}
+{% block content %}
+
+{# closing the container div from the base template to introduce a fluid div #}
+</div>
+
+<div class="container-fluid row-gradient">
+  <div class="row">
+    <h1 class="display-1 giant giant-white text-center">Development of the product webinar template for K15t</h1>
+  </div>  
+  <div class="row justify-content-center">
+    <div class="col-lg-9">
+      <video class="video-in-row" playsinline muted autoplay loop>
+        <source src="../images/works/k15t/webinar.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row credits">
+    <span>Front-end development</span>
+    <ul class="dev-list">
+      <li>HTML</li>
+      <li>SCSS</li>
+      <li>Apache Velocity</li>
+      <li>Foundation</li>
+      <li>jQuery</li>
+    </ul>
+  </div>
+</div>
+
+{# opening the container div to close it in the base template to place the footer within the grid #}
+<div class="container">
+{% endblock content %}

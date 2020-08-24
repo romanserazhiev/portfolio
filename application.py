@@ -15,8 +15,16 @@ def works():
   return render_template("works.html")
 
 @app.route("/k15t/atlassian-virtual-summit")
-def atlassianVirtualSummit():
+def k15tAtlassianVirtualSummit():
   return render_template("atlassian-virtual-summit.html")
+
+@app.route("/k15t/careers")
+def k15tCareers():
+  return render_template("careers.html")
+
+@app.route("/k15t/webinar")
+def k15tWebinar():
+  return render_template("webinar.html")
 
 @app.route("/k15t/support")
 def k15tSupport():
