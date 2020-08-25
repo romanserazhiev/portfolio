@@ -14,6 +14,10 @@ def index():
 def works():
   return render_template("works.html")
 
+@app.route("/mac-leaflet")
+def macLeaflet():
+  return render_template("mac-leaflet.html")
+
 @app.route("/k15t/atlassian-virtual-summit")
 def k15tAtlassianVirtualSummit():
   return render_template("atlassian-virtual-summit.html")

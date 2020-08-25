@@ -8252,6 +8252,10 @@ h3 {
 body {
   font-family: "Open Sans", sans-serif;
 }
+body img {
+  height: 100%;
+  width: 100%;
+}
 body .image-description {
   font-size: 0.8rem;
   margin-top: 0.5rem;
@@ -8558,6 +8562,78 @@ footer a:hover {
   list-style: none;
 }
 
+.description-company {
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+  opacity: 0.5;
+}
+.description-company p {
+  margin-bottom: 1rem;
+}
+.description-company p:last-of-type {
+  margin-bottom: 0;
+}
+.description-role {
+  font-size: 1.4rem;
+}
+@media (min-width: 576px) {
+  .description-role {
+    font-size: 1.2rem;
+  }
+}
+.description-role img {
+  margin-top: 8px;
+  width: 100%;
+}
+.description-role ul {
+  line-height: 1.8rem;
+  list-style-type: none;
+  max-width: 700px;
+  padding: 0 0 0 40px;
+}
+.description-role ul li {
+  margin: 0 0 10px 0;
+  text-indent: 0;
+}
+.leaflet img {
+  box-shadow: 0 60px 140px -50px rgba(44, 48, 56, 0.5);
+}
+.leaflet .rotate-right {
+  transform: rotate(20deg);
+}
+.leaflet .rotate-left {
+  transform: rotate(-15deg);
+}
+.leaflet .rotate-right-less {
+  transform: rotate(10deg);
+}
+.leaflet .rotate-left-less {
+  transform: rotate(-8deg);
+}
+.leaflet .rotate-perspective-up {
+  transform: perspective(1000px) rotateY(15deg) rotateX(40deg);
+}
+
+.background {
+  padding: 20%;
+}
+
+.color-blue {
+  background-color: #6699FF;
+}
+
+.color-black {
+  background-color: #333333;
+}
+
+.color-pink {
+  background-color: #FF0066;
+}
+
+.color-orange {
+  background-color: #FF9933;
+}
+
 .big-background .announce-title-black {
   font-size: 3rem;
   background: #fff;
@@ -8602,40 +8678,6 @@ footer a:hover {
 .podcast-main-image .podcast-downloads-list ul a:hover {
   color: #f41224;
   border-color: rgba(244, 18, 36, 0.3);
-}
-
-.description-company {
-  font-size: 1.4rem;
-  margin-bottom: 3rem;
-  opacity: 0.5;
-}
-.description-company p {
-  margin-bottom: 1rem;
-}
-.description-company p:last-of-type {
-  margin-bottom: 0;
-}
-.description-role {
-  font-size: 1.4rem;
-}
-@media (min-width: 576px) {
-  .description-role {
-    font-size: 1.2rem;
-  }
-}
-.description-role img {
-  margin-top: 8px;
-  width: 100%;
-}
-.description-role ul {
-  line-height: 1.8rem;
-  list-style-type: none;
-  max-width: 700px;
-  padding: 0 0 0 40px;
-}
-.description-role ul li {
-  margin: 0 0 10px 0;
-  text-indent: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
