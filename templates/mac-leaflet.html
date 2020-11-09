@@ -21,7 +21,7 @@
     <div class="container-fluid background color-blue">
         <div class="container">
             <div class="row">
-                <img class="rotate-right" src="../images/works/leaflet/leaflet_new_mac.png"/>
+                <img class="rotate-right" src="{{ url_for('static', filename='images/works/leaflet/leaflet_new_mac.png') }}"/>
             </div>
         </div>
     </div>
@@ -29,7 +29,7 @@
     <div class="container-fluid background color-black">
         <div class="container">
             <div class="row">
-                <img class="rotate-left" src="../images/works/leaflet/leaflet_new_user.png"/>
+                <img class="rotate-left" src="{{ url_for('static', filename='images/works/leaflet/leaflet_new_user.png') }}"/>
             </div>
         </div>
     </div>
@@ -37,7 +37,7 @@
     <div class="container-fluid background color-pink">
         <div class="container">
             <div class="row">
-                <img class="rotate-perspective-up" src="../images/works/leaflet/leaflet_problem.png"/>
+                <img class="rotate-perspective-up" src="{{ url_for('static', filename='images/works/leaflet/leaflet_problem.png') }}"/>
             </div>
         </div>
     </div>
@@ -45,17 +45,19 @@
     <div class="container-fluid background color-orange">
         <div class="container">
             <div class="row">
-                <img class="rotate-left-less" src="../images/works/leaflet/leaflet_severe_problem.png"/>
+                <img class="rotate-left-less" src="{{ url_for('static', filename='images/works/leaflet/leaflet_severe_problem.png') }}"/>
             </div>
         </div>
     </div>
 
     <div class="container">
-        <div class="row credits">
-            <span>Art Director and designer</span>
-            <ul class="dev-list">
-                <li>Pixelmator</li>
-            </ul>
+        <div class="row">
+            <div class="col-sm-2 credits">
+                <span>Designer</span>
+                <ul>
+                    <li>Roman Serazhiev</li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

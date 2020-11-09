@@ -19,12 +19,13 @@
 {% elif works|selectattr('item_count')|list|length == 3 %}
   <div class="col-md-4 work-announce">
   {% endif %}
+    {% set pathImage = 'images/works/' + work.work_image_url_path %}
     <a href="{{ work.work_url }}" {% if work.work_url == '' %}class="not-active"{% endif %}>
       <div class="preview {{ work.work_class }}">
         {% if work.work_type is defined %}
           {{ work.work_video_code|safe }}
         {% else %}
-          <img src="../images/works/{{ work.work_image_url_path }}"/>
+          <img src="{{ url_for('static', filename=pathImage) }}"/>
         {% endif %}
       </div>
       <div class="announce-text">

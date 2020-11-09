@@ -7,6 +7,11 @@
   {% set active_page = active_page|default('new') -%}
 #}
 
+{# to add another entry to the menu 
+    ('/', 'works', 'Works'),
+  ('/blog/', 'blog', 'Blog')
+#}
+
 <div class="ml-auto col-3 index-menu">
   <ul>
     {% for href, id, caption in navigation_bar %}

@@ -8236,16 +8236,16 @@ h3 {
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../../fonts/OpenSans-Regular.ttf") format("truetype");
+  src: local(Open Sans Regular), local(OpenSans-Regular), url("OpenSans-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../../fonts/OpenSans-Bold.ttf") format("truetype");
+  src: local(Open Sans Bold), local(OpenSans-Bold), url("OpenSans-Bold.ttf") format("truetype");
   font-weight: bold;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../../fonts/OpenSans-BoldItalic.ttf") format("truetype");
+  src: local(Open Sans Bold Italic), local(OpenSans-BoldItalic), url("OpenSans-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
@@ -8261,7 +8261,8 @@ body .image-description {
   margin-top: 0.5rem;
   margin-bottom: 3rem;
 }
-body .container a, body .container-fluid a {
+body .container a,
+body .container-fluid a {
   text-decoration: none;
   color: #000;
   border-color: rgba(0, 0, 0, 0.3);
@@ -8269,43 +8270,55 @@ body .container a, body .container-fluid a {
   -webkit-transition: color 0.3s ease, border-color 0.3s ease;
   transition: color 0.3s ease, border-color 0.3s ease;
 }
-body .container a:hover, body .container-fluid a:hover {
+body .container a:hover,
+body .container-fluid a:hover {
   color: #f41224;
   border-color: rgba(244, 18, 36, 0.3);
 }
-body .container .giant, body .container-fluid .giant {
+body .container .giant,
+body .container-fluid .giant {
   font-size: 3rem;
   padding-bottom: 6rem;
 }
-body .container .giant-white, body .container-fluid .giant-white {
+body .container .giant-white,
+body .container-fluid .giant-white {
   color: white;
 }
 @media (min-width: 576px) {
-  body .container .giant, body .container-fluid .giant {
+  body .container .giant,
+body .container-fluid .giant {
     font-size: 4rem;
   }
 }
 @media (min-width: 768px) {
-  body .container .giant, body .container-fluid .giant {
+  body .container .giant,
+body .container-fluid .giant {
     font-size: 6rem;
   }
 }
 @media (min-width: 992px) {
-  body .container .giant, body .container-fluid .giant {
+  body .container .giant,
+body .container-fluid .giant {
     font-size: 8rem;
   }
 }
-body .container .intro, body .container-fluid .intro {
+body .container .intro,
+body .container-fluid .intro {
   padding-top: 2rem;
   padding-bottom: 3rem;
 }
-body .container .intro h1, body .container-fluid .intro h1 {
+body .container .intro h1,
+body .container-fluid .intro h1 {
   font-size: 4rem;
+  left: -5px;
+  position: relative;
 }
-body .container .intro h1 .my-name, body .container-fluid .intro h1 .my-name {
+body .container .intro h1 .my-name,
+body .container-fluid .intro h1 .my-name {
   color: #CCCC00;
 }
-body .container .work-announce, body .container-fluid .work-announce {
+body .container .work-announce,
+body .container-fluid .work-announce {
   overflow: hidden;
   position: relative;
   padding-bottom: 3rem;
@@ -8316,10 +8329,12 @@ body .container .work-announce, body .container-fluid .work-announce {
   text-align: left;
   vertical-align: top;
 }
-body .container .work-announce a:hover, body .container-fluid .work-announce a:hover {
+body .container .work-announce a:hover,
+body .container-fluid .work-announce a:hover {
   color: black;
 }
-body .container .work-announce a.not-active, body .container-fluid .work-announce a.not-active {
+body .container .work-announce a.not-active,
+body .container-fluid .work-announce a.not-active {
   color: #000;
   border-color: rgba(0, 0, 0, 0.3);
   border-bottom: none;
@@ -8327,75 +8342,93 @@ body .container .work-announce a.not-active, body .container-fluid .work-announc
   pointer-events: none;
   display: block;
 }
-body .container .work-announce a.not-active img, body .container-fluid .work-announce a.not-active img {
+body .container .work-announce a.not-active img,
+body .container-fluid .work-announce a.not-active img {
   filter: grayscale(100%);
 }
-body .container .work-announce a.not-active span:hover, body .container-fluid .work-announce a.not-active span:hover {
+body .container .work-announce a.not-active span:hover,
+body .container-fluid .work-announce a.not-active span:hover {
   border-color: rgba(244, 18, 36, 0.3);
 }
-body .container .work-announce a.not-active .announce-title span, body .container-fluid .work-announce a.not-active .announce-title span {
+body .container .work-announce a.not-active .announce-title span,
+body .container-fluid .work-announce a.not-active .announce-title span {
   border-bottom: none;
   color: #000;
   opacity: 0.5;
 }
-body .container .work-announce .slim, body .container-fluid .work-announce .slim {
+body .container .work-announce .slim,
+body .container-fluid .work-announce .slim {
   height: 20rem;
 }
-body .container .work-announce img, body .container-fluid .work-announce img {
+body .container .work-announce img,
+body .container-fluid .work-announce img {
   display: block;
   transition: all 0.8s cubic-bezier(0, 0, 0, 1);
   width: 100%;
   height: 100%;
 }
-body .container .work-announce .announce-text, body .container-fluid .work-announce .announce-text {
+body .container .work-announce .announce-text,
+body .container-fluid .work-announce .announce-text {
   padding-top: 0.75rem;
 }
-body .container .work-announce .announce-text .date, body .container-fluid .work-announce .announce-text .date {
+body .container .work-announce .announce-text .date,
+body .container-fluid .work-announce .announce-text .date {
   opacity: 0.3;
   font-size: 0.9em;
   margin-top: 0.2em;
   margin-bottom: 0.1em;
 }
-body .container .work-announce .announce-text .announce-title, body .container-fluid .work-announce .announce-text .announce-title {
+body .container .work-announce .announce-text .announce-title,
+body .container-fluid .work-announce .announce-text .announce-title {
   font-size: 1.5em;
+  left: -2px;
   line-height: 1.34;
+  position: relative;
 }
-body .container .work-announce .announce-text .announce-title span, body .container-fluid .work-announce .announce-text .announce-title span {
+body .container .work-announce .announce-text .announce-title span,
+body .container-fluid .work-announce .announce-text .announce-title span {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-transition: color 0.3s ease, border-color 0.3s ease;
   transition: color 0.3s ease, border-color 0.3s ease;
 }
 @media (min-width: 992px) {
-  body .container .work-announce .announce-text .announce-title, body .container-fluid .work-announce .announce-text .announce-title {
+  body .container .work-announce .announce-text .announce-title,
+body .container-fluid .work-announce .announce-text .announce-title {
     font-size: 2em;
   }
 }
-body .container .work-announce .announce-text .announce-subtitle, body .container-fluid .work-announce .announce-text .announce-subtitle {
+body .container .work-announce .announce-text .announce-subtitle,
+body .container-fluid .work-announce .announce-text .announce-subtitle {
   opacity: 0.5;
   display: block;
 }
-body .container .work-announce > a:hover img, body .container-fluid .work-announce > a:hover img {
+body .container .work-announce > a:hover img,
+body .container-fluid .work-announce > a:hover img {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
 }
-body .container .work-announce > a:hover .not-active img, body .container-fluid .work-announce > a:hover .not-active img {
+body .container .work-announce > a:hover .not-active img,
+body .container-fluid .work-announce > a:hover .not-active img {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
 }
-body .container .work-announce > a:hover .announce-title span, body .container-fluid .work-announce > a:hover .announce-title span {
+body .container .work-announce > a:hover .announce-title span,
+body .container-fluid .work-announce > a:hover .announce-title span {
   color: #f41224;
   border-color: rgba(244, 18, 36, 0.3);
 }
-body .container .preview, body .container-fluid .preview {
+body .container .preview,
+body .container-fluid .preview {
   position: relative;
   overflow: hidden;
   display: block;
   border: none;
   box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.1);
 }
-body .container .preview:after, body .container-fluid .preview:after {
+body .container .preview:after,
+body .container-fluid .preview:after {
   content: "";
   display: block;
   position: absolute;
@@ -8407,30 +8440,58 @@ body .container .preview:after, body .container-fluid .preview:after {
   pointer-events: none;
   z-index: 2;
 }
-body .container .k15t-user-group, body .container-fluid .k15t-user-group {
+body .container .k15t-user-group,
+body .container-fluid .k15t-user-group {
   position: relative;
   padding-bottom: 56%;
 }
-body .container .k15t-user-group iframe, body .container .k15t-user-group object, body .container .k15t-user-group embed, body .container-fluid .k15t-user-group iframe, body .container-fluid .k15t-user-group object, body .container-fluid .k15t-user-group embed {
+body .container .k15t-user-group iframe,
+body .container .k15t-user-group object,
+body .container .k15t-user-group embed,
+body .container-fluid .k15t-user-group iframe,
+body .container-fluid .k15t-user-group object,
+body .container-fluid .k15t-user-group embed {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-body .container .k15t-product-webinar img, body .container-fluid .k15t-product-webinar img {
+body .container .k15t-product-webinar img,
+body .container-fluid .k15t-product-webinar img {
   height: 80%;
   position: relative;
   top: 30px;
 }
-body .container .k15t-team-up-forum img, body .container-fluid .k15t-team-up-forum img {
+body .container .k15t-team-up-forum img,
+body .container-fluid .k15t-team-up-forum img {
   padding: 20px;
 }
-body .container .k15t-support, body .container-fluid .k15t-support {
+body .container .k15t-support,
+body .container-fluid .k15t-support {
   background-color: black;
 }
-body .container .k15t-support img, body .container-fluid .k15t-support img {
+body .container .k15t-support img,
+body .container-fluid .k15t-support img {
   padding: 2em;
+}
+
+.credits {
+  padding: 1rem 0 0 0;
+}
+.credits .dev-list {
+  margin-left: 1rem;
+}
+.credits span {
+  font-size: 14px;
+  font-weight: bold;
+}
+.credits ul {
+  list-style: none;
+  padding-left: 0;
+}
+.credits ul li {
+  font-size: 14px;
 }
 
 .index-menu ul {
@@ -8553,13 +8614,6 @@ footer a:hover {
 }
 .row-gradient .video-in-row {
   width: 100%;
-}
-
-.credits {
-  padding: 1rem 0 0 1rem;
-}
-.credits .dev-list {
-  list-style: none;
 }
 
 .description-company {

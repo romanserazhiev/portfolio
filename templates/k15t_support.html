@@ -16,7 +16,7 @@
         </div>
     </div>
     <div class="row justify-content-between description-role">
-        <div class="col-lg-6">
+        <div class="col">
             <span>Achievements</span>
             <ul>
                 <li>
@@ -56,18 +56,12 @@
             <span>Certifications (in PDF)</span>
             <ul>
                 <li>
-                    <a href="../files/acp-200.pdf" target="_blank">Atlassian Certified Confluence Administrator (ACP-200)</a>;
+                    <a href="{{ url_for('static', filename='files/acp-200.pdf') }}" target="_blank">Atlassian Certified Confluence Administrator (ACP-200)</a>;
                 </li>
                 <li>
-                    <a href="../files/acp-500.pdf" target="_blank">Atlassian Certified System Administrator (ACP-500)</a>.
+                    <a href="{{ url_for('static', filename='files/acp-500.pdf') }}" target="_blank">Atlassian Certified System Administrator (ACP-500)</a>.
                 </li>
             </ul>
-        </div>
-        <div class="col-lg-5">
-            {% for selection in photos_sample %}
-                <img src="../images/works/k15t/{{ selection[0] }}"/>
-                <p class="image-description">{{ selection[1] }}</p>
-            {% endfor %}
         </div>
     </div>
 

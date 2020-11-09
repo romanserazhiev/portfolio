@@ -1,0 +1,331 @@
+// newsletter pop-up
+// js
+function newNewsletterSignUp () {
+    var $newsletterBanner = $('.newsletter-sign-up-full');
+    if (!$newsletterBanner.length || !$newsletterBanner.is(':visible')) return false;
+    var $newsletterBannerWrapper = $('.newsletter-sign-up', $newsletterBanner);
+    var oldNewsletterBannerOpacity = 1,
+        startScale = 0.9;
+    $(document).on('scroll', $newsletterBanner, function () {
+        var top = $(document).scrollTop();
+        var wh = $(window).height(),
+            start = $newsletterBanner.offset().top - wh,
+            newsletterBannerHeight = $newsletterBanner.height(),
+            end = newsletterBannerHeight + start,
+            newNewsletterBannerOpacity, p;
+        if (newsletterBannerHeight > wh) end = start + wh - wh / 4;
+        if (top < start) {
+            newNewsletterBannerOpacity = 1
+        } else {
+            p = (top - start) * 100 / (end - start);
+            newNewsletterBannerOpacity = (100 - p) / 100;
+            if (newNewsletterBannerOpacity < 0) newNewsletterBannerOpacity = 0;
+            if (newNewsletterBannerOpacity > 1) newNewsletterBannerOpacity = 1;
+        }
+        if (newNewsletterBannerOpacity != oldNewsletterBannerOpacity) {
+            oldNewsletterBannerOpacity = newNewsletterBannerOpacity;
+            p = (100 - 100 * newNewsletterBannerOpacity) / 100;
+            var scale = (1 - startScale) * p + startScale;
+            if (scale > 1) scale = 1;
+            var opacity = Math.abs(newNewsletterBannerOpacity - 1);
+            $newsletterBannerWrapper.css({
+                'opacity': opacity,
+                '-webkit-transform': 'scale(' + scale + ')',
+                'transform': 'scale(' + scale + ')'
+            });
+        }
+    });
+}
+
+// css
+.newsletter-sign-up-full {
+  margin: 5em;
+  margin-bottom: 10em;
+
+  .newsletter-sign-up {
+    padding: 3em;
+    border-radius: 50px;
+    border: none;
+    background: $dark-blue;
+    box-shadow: 0 70px 100px -50px rgba(16,98,251,.5);
+    transition: background .3s;
+
+    .form-submit-button {
+      button {
+        border: none;
+        color: black;
+        background-color: grey;
+      }
+    }
+
+    
+
+    @include breakpoint(medium down) {
+      padding: 0 2em;
+    }
+
+    input {
+      border: unset;
+      border-bottom: unset;
+      border-radius: 10px;
+      border-color: rgba(255,255,255,.2);
+      background-color: rgba(255,255,255,.2);
+      color: white;
+      vertical-align: middle;
+
+      &::placeholder {
+        color: white;
+      }
+
+      
+
+      &:focus {
+        border: unset;
+        border-bottom: unset;
+        border-radius: 10px;
+        border-color: rgba(255,255,255,.4);
+        background-color: rgba(255,255,255,.4);
+
+        &::placeholder {
+          color: white;
+        }
+      }
+
+      &:hover {
+        border-color: rgba(255,255,255,.4);
+        background-color: rgba(255,255,255,.4);
+      }
+    }
+
+    &__heading {
+      font-family: $font-heading-medium;
+      font-size: $very-large;
+      margin-bottom: 1em;
+      text-align: center;
+
+      @include breakpoint(medium) {
+        font-size: $large-heading;
+      }
+
+      p {
+        line-height: 1.2;
+        color: white;
+      }
+    }
+
+    .field-group:not([data-macro-name="sp-form-hidden"]) {
+      padding-bottom: 0.5em;
+    }
+
+    .newsletter-explanation-container {
+      margin-top: 0;
+
+      .newsletter-explanation {
+        color: white;
+        font-size: 12px;
+        font-style: italic;
+      }
+    }
+
+    .subscribe-button {
+      width: 100%;
+      text-align: center;
+      background: #999999;
+      line-height: 80px;
+      font-size: 1.6em;
+      height: 80px;
+      display: block;
+      border-radius: .2em;
+      box-shadow: inset 0 0 0 100px hsla(0,0%,100%,.15)!important;
+      color: hsla(0,0%,100%,.4)!important;
+      cursor: default;
+
+      button {
+        color: white;
+
+      }
+
+      &-active {
+        background: #FF6666;
+        transition: background .3s;
+
+        button { 
+          text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        &:hover {
+          cursor: pointer;
+          background: #ff8484;
+        }
+      }
+    }
+
+    
+
+    
+
+    .privacy-line {
+      margin-top: 0.5em;
+      
+      label {
+        color: white;
+        display: block;
+        padding-right: 10px;
+        padding-left: 22px;
+        text-indent: -22px;
+      }
+
+      a {
+        color: #99CCFF;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(153,204,255,.3);
+        -webkit-transition: color .3s ease, border-color .3s ease;
+        transition: color .3s ease, border-color .3s ease;
+
+        &:hover {
+          color: #e0efff;
+          border-color: rgba(224,239,255,.3);
+        }
+      }
+    }
+    
+    
+
+    &--illustration {
+      position: relative;
+      width: 435px;
+
+      img {
+        position: absolute;
+        right: -760px;
+        top: -270px;
+      }
+    }
+  }
+}
+
+//cookies
+//css
+#cookies {
+  background-color: $primary-color;
+  border: none;
+  box-shadow: 0 30px 140px -50px rgba(44, 48, 56, 0.5);
+  padding: 2rem;
+  padding-bottom: 1rem;
+  position: fixed;
+  // check the styles below (left, top, transform) and see why Foundation is adding extra CSS code to move the banner
+  // to the other position compared to being in the centre
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+
+  @include breakpoint(small only) {
+    bottom: 0 !important;
+    right: 0 !important;
+    min-height: 45vh;
+    height: 45vh;
+  }
+
+  .fa-smile {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: $black;
+    text-decoration: underline;
+  }
+
+  .cookie-buttons {
+    margin-bottom: 0;
+
+    button {
+      margin-bottom: 0;
+    }
+  }
+
+  .disable-cookies {
+    margin-bottom: 0;
+    margin-top: 1rem;
+    max-height: 200px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+
+    &.hidden {
+      max-height: 0;
+    }
+  }
+}
+
+
+.new-cookie {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transform: translate3d(0,110%,0);
+  z-index: 999;
+  text-align: left;
+  width: 100%;
+  font-size: 16px;
+  font-family: 'nbAkademie-regular', Helvetica, Arial, sans-serif;
+  transition: all .4s cubic-bezier(.165,.84,.44,1);
+
+  div {
+    background: $dark-blue;
+    color: #fff;
+    padding: 1.5em 13em 1.5em 2em;
+    position: relative;
+    transition: all .3s;
+
+    button {
+      align-items: right;
+      background: rgba(255,255,255,.2);
+      font-size: inherit;
+      font-family: inherit;
+      border-radius: 50px;
+      border: none;
+      color: inherit;
+      outline: 0;
+      display: block;
+      position: absolute;
+      top: 1em;
+      bottom: 1em;
+      padding: 0 3em;
+      transition: all .3s;
+
+      &:hover {
+        background: rgba(255,255,255,.4);
+        cursor: pointer;
+      }
+
+      &:first-of-type {
+        right: 200px;
+      }
+
+      &:last-of-type {
+        right: 20px;
+      }
+    }
+  }
+}
+
+.show { 
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}
+
+.new-popup {
+  margin: auto;
+  width: 50%;
+
+  .new-popup-wrapper {
+    visibility: visible;
+  }
+}
+

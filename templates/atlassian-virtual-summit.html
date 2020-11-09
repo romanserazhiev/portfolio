@@ -16,21 +16,25 @@
   <div class="row justify-content-center">
     <div class="col-lg-9">
       <video class="video-in-row" playsinline muted autoplay loop>
-        <source src="../images/works/k15t/summit-vr-video-720.mp4" type="video/mp4">
+        <source src="{{ url_for('static', filename='images/works/k15t/summit-vr-video-720.mp4') }}" type="video/mp4">
       </video>
     </div>
   </div>
 </div>
 <div class="container">
-  <div class="row credits">
-    <span>Front-end development</span>
-    <ul class="dev-list">
-      <li>HTML</li>
-      <li>SCSS</li>
-      <li>Apache Velocity</li>
-      <li>Foundation</li>
-      <li>jQuery</li>
-    </ul>
+  <div class="row">
+    <div class="col-sm-2 credits">
+      <span>Front-end development</span>
+      <ul>
+        <li>Roman Serazhiev</li>
+      </ul>
+    </div>
+    <div class="col-sm-2 credits">
+      <span>Design</span>
+      <ul>
+        <li>K15t</li>
+      </ul>
+    </div>
   </div>
 </div>
 

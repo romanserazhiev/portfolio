@@ -7,7 +7,7 @@
 {# Image of me on the index page #}
 {% block index_photo %}
   <div class="col-9 col-xl-7">
-    <img src="../images/about/roman.jpg" />
+    <img src="{{ url_for('static', filename='images/about/roman.jpg') }}" />
   </div>
 {% endblock index_photo %}
 
@@ -17,8 +17,7 @@
   <div class="col-9 col-xl-7">
     <h1 class="display-3">Hi.<br/> My&nbsp;name is <span class="my-name">Roman</span></h1>
     <section>
-      <p>I&nbsp;am a&nbsp;designer, a&nbsp;developer, a&nbsp;customer service specialist and an&nbsp;Atlassian solutions specialist.</p>
-      <p>If&nbsp;you would like to&nbsp;talk about how&nbsp;I could help you with your project, <a href="mailto:romanserazhiev@me.com">write an&nbsp;email</a> or&nbsp;<a href="https://t.me/romanserazhiev">send a&nbsp;message</a> in&nbsp;Telegram.</p>
+      <p>I&nbsp;am a&nbsp;designer and a&nbsp;developer.</p>
     </section>
   </div>
 
