@@ -21,23 +21,25 @@
     </div>
   </div>
 </div>
+
+{% endblock content %}
+
+{% block credits %}
 <div class="container">
-  <div class="row">
-    <div class="col-sm-2 credits">
-      <span>Front-end development</span>
-      <ul>
-        <li>Roman Serazhiev</li>
-      </ul>
-    </div>
-    <div class="col-sm-2 credits">
-      <span>Design</span>
-      <ul>
-        <li>K15t</li>
-      </ul>
-    </div>
+  <div class="col-sm-2 credits">
+    <span>Front-end development</span>
+    <ul>
+      <li>Roman Serazhiev</li>
+    </ul>
+  </div>
+  <div class="col-sm-2 credits">
+    <span>Design</span>
+    <ul>
+      <li>K15t</li>
+    </ul>
   </div>
 </div>
 
 {# opening the container div to close it in the base template to place the footer within the grid #}
 <div class="container">
-{% endblock content %}
+{% endblock credits %}

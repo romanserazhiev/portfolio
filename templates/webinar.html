@@ -21,10 +21,15 @@
     </div>
   </div>
 </div>
+
+{% endblock content %}
+
+{% block credits %}
+
 <div class="container">
-  <div class="row credits">
+  <div class="col-sm-2 credits">
     <span>Front-end development</span>
-    <ul class="dev-list">
+    <ul>
       <li>HTML</li>
       <li>SCSS</li>
       <li>Apache Velocity</li>
@@ -36,4 +41,4 @@
 
 {# opening the container div to close it in the base template to place the footer within the grid #}
 <div class="container">
-{% endblock content %}
+{% endblock credits %}

@@ -50,20 +50,22 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-2 credits">
-                <span>Designer</span>
-                <ul>
-                    <li>Roman Serazhiev</li>
-                </ul>
-            </div>
-        </div>
+    
+</div>
+
+{% endblock content %}
+
+{# section with the list of works #}
+{% block credits %}
+<div class="container">
+    <div class="col-sm-2 credits">
+        <span>Designer</span>
+        <ul>
+            <li>Roman Serazhiev</li>
+        </ul>
     </div>
 </div>
 
-
-
 {# opening the container div to close it in the base template to place the footer within the grid #}
 <div class="container">
-{% endblock content %}
+{% endblock credits %}

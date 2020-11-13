@@ -4,24 +4,22 @@
 {# title of the main (index) page #}
 {% block title %}Roman Serazhiev{% endblock title %}
 
-{# Image of me on the index page #}
-{% block index_photo %}
-  <div class="col-9 col-xl-7">
-    <img src="{{ url_for('static', filename='images/about/roman.jpg') }}" />
-  </div>
-{% endblock index_photo %}
-
 {# section about me #}
-{% block about_text %}
-
+{% block about_me %}
+  
   <div class="col-9 col-xl-7">
-    <h1 class="display-3">Hi.<br/> My&nbsp;name is <span class="my-name">Roman</span></h1>
-    <section>
-      <p>I&nbsp;am a&nbsp;designer and a&nbsp;developer.</p>
-    </section>
+    <h1 class="display-3">Roman Serazhiev
   </div>
-
-{% endblock about_text %}
+  
+  {#
+  <div class="about-section">
+    <div class="logo">
+      <img src="{{ url_for('static', filename='images/about/roman.jpeg') }}">
+    </div>
+    <h1>Roman Serazhiev</h1>
+  </div>
+  #}
+{% endblock about_me %}
 
 {# section with the list of works #}
 {% block content %}

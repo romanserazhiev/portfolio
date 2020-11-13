@@ -58,17 +58,19 @@ body {
         }
 
         .intro {
-            h1 {
-                font-size: 4rem;
-                left: -5px;
-                position: relative;
-
-                .my-name {
-                    color: $yellow-header;
+            .about-section {
+                img {
+                    border-radius: 50%;
+                    height: unset;
+                    width: 4rem;
                 }
-
+                h1 {
+                    bottom: 4rem;
+                    font-size: 3rem;
+                    left: 5rem;
+                    position: relative;
+                }
             }
-
 
             padding-top: $page-top-padding;
             padding-bottom: $about-intro-padding-bottom;
@@ -241,10 +243,6 @@ body {
 
 .credits {
     padding: 1rem 0 0 0;
-
-    .dev-list {
-        margin-left: 1rem;
-    }
 
     span {
         font-size: 14px;

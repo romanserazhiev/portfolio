@@ -26,11 +26,21 @@
       </ul>
     </div>
   </div>
-  <div class="row credits">
-    <span>Graphical design</span>
-    <ul class="dev-list">
-      <li>Pixelmator</li>
-    </ul>
-  </div>
+</div>
 
 {% endblock content %}
+
+{% block credits %}
+
+<div class="container">
+  <div class="col-sm-2 credits">
+    <span>Graphical design</span>
+    <ul>
+      <li>Roman Serazhiev</li>
+    </ul>
+  </div>
+</div>
+
+{# opening the container div to close it in the base template to place the footer within the grid #}
+<div class="container">
+{% endblock credits %}

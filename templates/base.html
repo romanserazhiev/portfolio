@@ -3,13 +3,23 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    {# meta tags for Yandex and Google search verification #}
+    <meta name="yandex-verification" content="8e9348b8d75328af" />
+    <meta name="google-site-verification" content="oyealD5MVWoqbSoaaEF90Ix-mg43RAFOqaNQRsKANbs" />
+
     {# CSS and JS links #}
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
     <script src="{{ url_for('static', filename='jquery-3.4.1.slim.min.js') }}"></script>
+
+    {# favicon #}
+    <link rel="shortcut icon" href="{{ url_for('static', filename='userpic-2x.jpg') }}" type="image/x-icon">
+
+    {# icon for Web Clips on iOS #}
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='userpic-2x.jpg') }}">
     
     {# Vue.js #}
     {# dev version #}
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    {# <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> #}
     {# production version #}
     {# <script src="https://cdn.jsdelivr.net/npm/vue"></script> #}
     
@@ -23,16 +33,14 @@
   <body>
     <div class="container">
       <div class="row intro">
-        
-        {# don't like the way it looks, commenting out for now #}
-        {# {% block index_photo %}{% endblock index_photo %} #}
 
-        {% block about_text %}{% endblock about_text %}
+        {% block about_me %}{% endblock about_me %}
         {% include 'menu.html' %}
        
       </div>
 
       {% block content%}{% endblock content %}
+      {% block credits%}{% endblock credits %}
       {% include 'footer.html' %}
 
     </div>
