@@ -1,0 +1,59 @@
+.big-background{
+  
+  .announce-title-black {
+    font-size: 3rem;
+    background: #fff;
+    padding: 4px 16px 2rem;
+  }
+
+  @include media-breakpoint-up(sm) {
+    .announce-title-black {
+      font-size: 3rem;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .announce-title-black {
+      font-size: 4rem;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .announce-title-black {
+      font-size: 6rem;
+    }
+  }
+}
+  
+
+.podcast-main-image {
+  margin-bottom: 3em;
+
+  .podcast-iphone-cell {
+    text-align: center;
+
+    .podcast-cover-image-iphone {
+      max-width: 350px;
+      margin-bottom: 5em;
+    }
+  }
+
+  .podcast-downloads-list {
+    ul {
+      line-height: 2em;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+
+      .download-podcast-cover-link {
+        font-size: 1rem;
+      }
+
+      a:hover {
+        color: $link-color-hover;
+        border-color: $link-border-color-hover;
+      }
+    }
+  }
+}

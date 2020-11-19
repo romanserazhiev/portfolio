@@ -1,0 +1,260 @@
+body {
+
+    font-family: var(--mainFontFamily);
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .image-description {
+        font-size: .8rem;
+        margin-top: .5rem;
+        margin-bottom: 3rem;
+    }
+
+    .container,
+    .container-fluid {
+
+        a {
+            text-decoration: none;
+            color: $link-color;
+            border-color: $link-border-color;
+            border-bottom: $link-border-setting-with-color;
+            -webkit-transition: color .3s ease, border-color .3s ease;
+            transition: color .3s ease, border-color .3s ease;
+        }
+
+        a:hover {
+            color: $link-color-hover;
+            border-color: $link-border-color-hover;
+        }
+
+        .giant {
+            font-size: 3rem;
+            padding-bottom: 6rem;
+
+            &-white {
+                color: white;
+            }
+        }
+
+        @include media-breakpoint-up(sm) {
+            .giant {
+                font-size: 4rem;
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            .giant {
+                font-size: 6rem;
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            .giant {
+                font-size: 8rem;
+            }
+        }
+
+        .intro {
+            .about-section {
+                img {
+                    border-radius: 50%;
+                    height: unset;
+                    width: 4rem;
+                }
+                h1 {
+                    bottom: 4rem;
+                    font-size: 3rem;
+                    left: 5rem;
+                    position: relative;
+                }
+            }
+
+            padding-top: $page-top-padding;
+            padding-bottom: $about-intro-padding-bottom;
+        }
+
+        .work-announce {
+            a:hover {
+                color: black;
+            }
+
+            a.not-active {
+                color: $not-active-link-color;
+                border-color: $link-border-color;
+                border-bottom: none;
+                cursor: default;
+                pointer-events: none;
+                display: block;
+
+                img {
+                    filter: grayscale(100%);
+                }
+
+                span:hover {
+                    border-color: $link-border-color-hover;
+                }
+
+                .announce-title {
+                    span {
+                        border-bottom: none;
+                        color: $not-active-link-color;
+                        opacity: 0.5;
+                    }
+                }
+            }
+
+            .slim {
+                height: 20rem;
+            }
+
+            img {
+                display: block;
+                transition: all .8s cubic-bezier(0, 0, 0, 1);
+                width: 100%;
+                height: 100%;
+            }
+
+            .announce-text {
+                .date {
+                    opacity: .3;
+                    font-size: .9em;
+                    margin-top: .2em;
+                    margin-bottom: .1em;
+                }
+
+                .announce-title {
+                    span {
+                        border-bottom: $title-link-border-setting-with-color;
+                        -webkit-transition: color .3s ease, border-color .3s ease;
+                        transition: color .3s ease, border-color .3s ease;
+                    }
+
+                    @media(min-width:992px) {
+                        font-size: 2em;
+                    }
+
+                    //default in Bootstrap starts with XS, smallest size
+                    font-size: 1.5em;
+                    left: -2px;
+                    line-height: 1.34;
+                    position: relative;
+                }
+
+                .announce-subtitle {
+                    opacity: .5;
+                    display: block;
+                }
+
+                padding-top: 0.75rem;
+            }
+
+            overflow: hidden;
+            position: relative;
+            padding-bottom: 3rem;
+            display: inline-block;
+            border: none;
+            color: $link-color;
+            border: none;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .work-announce>a:hover img {
+            -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            transform: scale(1.05);
+        }
+
+        .work-announce>a:hover .not-active img {
+            -webkit-transform: none;
+            -ms-transform: none;
+            transform: none;
+        }
+
+        .work-announce>a:hover .announce-title span {
+            color: $link-color-hover;
+            border-color: $link-border-color-hover;
+        }
+
+        .preview {
+            position: relative;
+            overflow: hidden;
+            display: block;
+            border: none;
+            box-shadow: inset 0 0 80px rgba(0, 0, 0, .1);
+
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                background: $work-grey;
+                pointer-events: none;
+                z-index: 2;
+            }
+        }
+
+        .k15t {
+            &-user-group {
+                position: relative;
+                padding-bottom: 56%;
+
+                iframe,
+                object,
+                embed {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &-product-webinar {
+                img {
+                    height: 80%;
+                    position: relative;
+                    top: 30px;
+                }
+            }
+
+            &-team-up-forum {
+                img {
+                    padding: 20px;
+                }
+            }
+
+            &-support {
+                background-color: black;
+
+                img {
+                    padding: 2em;
+                }
+            }
+        }
+    }
+}
+
+.credits {
+    padding: 1rem 0 0 0;
+
+    span {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            font-size: 14px;
+        }
+    }
+}

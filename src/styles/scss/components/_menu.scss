@@ -1,0 +1,30 @@
+.index-menu {
+  ul {
+    line-height: 2em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+
+    li {
+      a {
+        border-color: $link-color-menu-border;
+        color: $link-color-menu;
+  
+        &:hover {
+          background: $link-color-menu-background;
+        }
+      }
+
+      &.active {
+        pointer-events: none;
+
+        a {
+          border-bottom: none;
+          color: #000;
+          font-weight: bold;
+        }
+      }
+    }  
+  }
+}
