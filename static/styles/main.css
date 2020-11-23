@@ -8323,6 +8323,18 @@ footer a:hover {
   margin: 0 0 10px 0;
   text-indent: 0;
 }
+.role-title h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+  max-width: 900px;
+}
+
+@media (min-width: 768px) {
+  .role-title h1 {
+    font-size: 3rem;
+  }
+}
 .index-menu ul {
   line-height: 2em;
   list-style: none;
@@ -8344,6 +8356,26 @@ footer a:hover {
   border-bottom: none;
   color: #000;
   font-weight: bold;
+}
+
+.work-title h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: black;
+  text-align: center;
+  margin: 24px auto 6rem;
+  max-width: 900px;
+  padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .work-title h1 {
+    font-weight: bold;
+    font-size: 3rem;
+  }
+}
+.work-title.white h1 {
+  color: white;
 }
 
 .row-gradient {
@@ -8444,6 +8476,37 @@ body .image-description {
   margin-top: 0.5rem;
   margin-bottom: 3rem;
 }
+body .container,
+body .container-fluid {
+  /* 
+  .giant {
+      font-size: 3rem;
+      padding-bottom: 6rem;
+
+      &-white {
+          color: white;
+      }
+  }
+
+  @include media-breakpoint-up(sm) {
+      .giant {
+          font-size: 4rem;
+      }
+  }
+
+  @include media-breakpoint-up(md) {
+      .giant {
+          font-size: 6rem;
+      }
+  }
+
+  @include media-breakpoint-up(lg) {
+      .giant {
+          font-size: 8rem;
+      }
+  }
+  */
+}
 body .container a,
 body .container-fluid a {
   text-decoration: none;
@@ -8457,33 +8520,6 @@ body .container a:hover,
 body .container-fluid a:hover {
   color: #f41224;
   border-color: rgba(244, 18, 36, 0.3);
-}
-body .container .giant,
-body .container-fluid .giant {
-  font-size: 3rem;
-  padding-bottom: 6rem;
-}
-body .container .giant-white,
-body .container-fluid .giant-white {
-  color: white;
-}
-@media (min-width: 576px) {
-  body .container .giant,
-body .container-fluid .giant {
-    font-size: 4rem;
-  }
-}
-@media (min-width: 768px) {
-  body .container .giant,
-body .container-fluid .giant {
-    font-size: 6rem;
-  }
-}
-@media (min-width: 992px) {
-  body .container .giant,
-body .container-fluid .giant {
-    font-size: 8rem;
-  }
 }
 body .container .intro,
 body .container-fluid .intro {
@@ -8703,10 +8739,10 @@ body .container-fluid .k15t-support img {
 }
 .podcast-main-image .podcast-iphone-cell {
   text-align: center;
+  margin-bottom: 5em;
 }
 .podcast-main-image .podcast-iphone-cell .podcast-cover-image-iphone {
   max-width: 350px;
-  margin-bottom: 5em;
 }
 .podcast-main-image .podcast-downloads-list ul {
   line-height: 2em;

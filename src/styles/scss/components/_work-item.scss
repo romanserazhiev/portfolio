@@ -1,0 +1,24 @@
+.work-title {
+  h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgb(   0,   0,   0      );
+    text-align: center;
+    margin: 24px auto 6rem; 
+    max-width: 900px;
+    padding: 0 15px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .work-title h1 {
+    font-weight: bold;
+    font-size: 3rem;
+  }
+}
+
+.work-title.white {
+  h1 {
+    color: rgb(   255,   255,   255      );  
+  }
+}

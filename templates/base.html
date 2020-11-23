@@ -8,7 +8,7 @@
     <meta name="google-site-verification" content="oyealD5MVWoqbSoaaEF90Ix-mg43RAFOqaNQRsKANbs" />
 
     {# CSS and JS links #}
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}">
+		{% block style %}<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}">{% endblock %}
     <script src="{{ url_for('static', filename='js/jquery-3.4.1.slim.min.js') }}"></script>
 
     {# favicon #}

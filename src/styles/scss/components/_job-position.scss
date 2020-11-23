@@ -44,3 +44,18 @@
         }
     } 
 }
+
+.role-title {
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 4rem;
+    max-width: 900px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .role-title h1 {
+    font-size: 3rem;
+  }
+}
