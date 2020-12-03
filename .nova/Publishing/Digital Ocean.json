@@ -1,9 +1,0 @@
-{
-  "identifier" : "C8DC5653-2119-4E99-9532-BB4BDACC1A12",
-  "ignoredFilePatterns" : [
-    "*.scss"
-  ],
-  "remotePath" : "\/var\/www\/Portfolio\/Portfolio",
-  "server" : "Digital Ocean",
-  "usesPublishing" : true
-}
