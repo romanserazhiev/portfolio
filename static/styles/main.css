@@ -8551,6 +8551,10 @@ body .container-fluid .work-announce {
   text-align: left;
   vertical-align: top;
 }
+body .container .work-announce .announce-title img,
+body .container-fluid .work-announce .announce-title img {
+  width: 30px;
+}
 body .container .work-announce a:hover,
 body .container-fluid .work-announce a:hover {
   color: black;

@@ -79,6 +79,12 @@ body {
         }
 
         .work-announce {
+          .announce-title {
+            img {
+              width: 30px;
+            }
+          }
+          
             a:hover {
                 color: black;
             }
@@ -99,11 +105,13 @@ body {
                     border-color: $link-border-color-hover;
                 }
 
-                .announce-title {
+                .announce-title {               
                     span {
                         border-bottom: none;
                         color: $not-active-link-color;
                         opacity: 0.5;
+                        
+                        
                     }
                 }
             }

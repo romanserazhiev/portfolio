@@ -1,6 +1,8 @@
 .nova
 .nova/Configuration.json
 
+Blog/
+
 ######################### macOS.gitignore #########################
 
 # General

@@ -22,7 +22,7 @@
     {% set pathImage = 'images/works/' + work.image_url_path %}
     <a href="{{ work.url }}" {% if work.url == '' %}class="not-active"{% endif %}>
       <div class="preview {{ work.class }}">
-        {% if work.type is defined %}
+        {% if work.video is defined %}
           {{ work.video_code|safe }}
         {% else %}
           <img src="{{ url_for('static', filename=pathImage) }}"/>
@@ -31,7 +31,13 @@
       <div class="announce-text">
         <div class="date">{{ work.date|safe }}</div>
         <h1 class="announce-title">
-          <span>{{ work.title|safe }}</span>
+          <span>
+            {% if work.type is defined %}
+              {% set typeImage = 'images/works/' + work.type + '.svg'%}
+              <img src="{{ url_for('static', filename=typeImage) }}">
+            {% endif %}
+            {{ work.title|safe }}
+          </span>
         </h1> 
         <span class="announce-subtitle">{{ work.subtitle|safe }}</span> 
       </div>
