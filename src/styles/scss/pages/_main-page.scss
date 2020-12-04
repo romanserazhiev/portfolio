@@ -82,6 +82,12 @@ body {
           .announce-title {
             img {
               width: 30px;
+              
+              &:hover {
+                -webkit-transform: none;
+                -ms-transform: none;
+                transform: none;
+              }
             }
           }
           
@@ -183,6 +189,12 @@ body {
             -ms-transform: none;
             transform: none;
         }
+        
+        .work-announce>a:hover .work-type-icon {
+          -webkit-transform: none;
+          -ms-transform: none;
+          transform: none;
+      }
 
         .work-announce>a:hover .announce-title span {
             color: $link-color-hover;

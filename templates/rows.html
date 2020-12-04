@@ -34,7 +34,7 @@
           <span>
             {% if work.type is defined %}
               {% set typeImage = 'images/works/' + work.type + '.svg'%}
-              <img src="{{ url_for('static', filename=typeImage) }}">
+              <img class="work-type-icon" src="{{ url_for('static', filename=typeImage) }}">
             {% endif %}
             {{ work.title|safe }}
           </span>
