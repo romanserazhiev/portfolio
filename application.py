@@ -21,6 +21,10 @@ def macLeaflet():
 @app.route("/k15t/atlassian-virtual-summit")
 def k15tAtlassianVirtualSummit():
   return render_template("atlassian-virtual-summit.html")
+  
+@app.route("/k15t/team-up-forum")
+def k15tTeamUpForum():
+  return render_template("team-up-forum.html")
 
 @app.route("/k15t/careers")
 def k15tCareers():
