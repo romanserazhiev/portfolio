@@ -83,4 +83,4 @@ if app.config['DEBUG']:
 
 @app.context_processor
 def inject_now():
-    return {'now': datetime.utcnow()}
+    return dict(now=datetime.utcnow())

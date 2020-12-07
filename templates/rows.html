@@ -29,7 +29,14 @@
         {% endif %}
       </div>
       <div class="announce-text">
-        <div class="date">{{ work.date|safe }}</div>
+        {% set fullDate = work.date|safe %}
+        {% if work.year == 'custom' %}
+          {% set fullDate = work.date|safe %}
+        {% elif work.year != work.currentYear %}
+          {% set fullDate = work.date + ' ' + work.year|string %}
+        {% endif %}      
+        
+        <div class="date">{{ fullDate|safe }}</div>
         <h1 class="announce-title">
           <span>
             {% if work.type is defined %}
