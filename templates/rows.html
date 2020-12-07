@@ -33,7 +33,7 @@
         {% if work.year == 'custom' %}
           {% set fullDate = work.date|safe %}
         {% elif work.year != work.currentYear %}
-          {% set fullDate = work.date + ' ' + work.year|string %}
+          {% set fullDate = work.date + ', ' + work.year|string %}
         {% endif %}      
         
         <div class="date">{{ fullDate|safe }}</div>

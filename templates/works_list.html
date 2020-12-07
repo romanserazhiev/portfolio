@@ -1,19 +1,21 @@
 {% from "rows.html" import render_row %}
 
 {# List of works #}
+{#
 {{ render_row ([
   {'item_count': 1,
-  'url': '/k15t/webinar',
-  'class': 'k15t-product-webinar slim',
-  'image_url_path': 'k15t/product-webinar-announce.svg',
-  'date': 'July 28',
-  'year': 2020,
-  'title': 'Product webinar template for K15t',
-  'subtitle': 'Programming the logic and front-end of the page',
-  'type': 'programming',
+  'url': '/ravil',
+  'class': 'ravil slim',
+  'image_url_path': 'ravil/ravils-logo-announce.jpg',
+  'date': 'December 19',
+  'year': 2019,
+  'title': 'Identity for Ravil Serazhiev',
+  'subtitle': 'Ravil Serazhiev is the brand of the person of the same name supplying government orders in clothing for hospitals, child centres, nursing homes and other establishments',
+  'type': 'design',
   'currentYear': now.year
   }]
 )}}
+#}
 
 {{ render_row ([
   {'item_count': 1,
@@ -35,6 +37,17 @@
   'year': 2020,
   'title': 'Careers page redesign for K15t',
   'subtitle': 'Programming of the page',
+  'type': 'programming',
+  'currentYear': now.year
+  },
+  {'item_count': 3,
+  'url': '/k15t/webinar',
+  'class': 'k15t-product-webinar slim',
+  'image_url_path': 'k15t/product-webinar-announce.svg',
+  'date': 'July 28',
+  'year': 2020,
+  'title': 'Product webinar template for K15t',
+  'subtitle': 'Programming the logic and front-end of the page',
   'type': 'programming',
   'currentYear': now.year
   }]

@@ -8554,6 +8554,7 @@ body .container-fluid .work-announce {
 body .container .work-announce .announce-title img,
 body .container-fluid .work-announce .announce-title img {
   width: 30px;
+  opacity: 0.3;
 }
 body .container .work-announce .announce-title img:hover,
 body .container-fluid .work-announce .announce-title img:hover {
