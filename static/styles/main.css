@@ -8329,6 +8329,11 @@ footer a:hover {
   margin-bottom: 4rem;
   max-width: 900px;
 }
+.role-title .big-title {
+  font-size: 5rem;
+  max-width: unset;
+  text-align: center;
+}
 
 @media (min-width: 768px) {
   .role-title h1 {

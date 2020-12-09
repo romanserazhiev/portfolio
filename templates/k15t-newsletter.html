@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{# title of the page #}
+{% block title %}{{ title }}{% endblock title %}
+
+{# section with the list of works #}
+{% block content %}
+
+    <div class="row role-title">
+      <div class="col-md-12">
+        <h1 class="big-title">Programming the animation of the newsletter banner and design of the &ldquo;Subscribe&rdquo; button</h1>
+      </div>
+    </div>
+    <div class="row description-company">
+        <div class="col-md-12">
+            <span>Task: attract new subscribers by implementing a nice-looking 
+              and smooth animation of the subscription banner. Design the main 
+              &ldquo;Subscribe&rdquo; button to spark the urge to click on it 
+              from site viewers.</span>
+        </div>
+    </div>
+
+{# closing the container div from the base template to introduce a fluid div #}
+</div>
+
+{% endblock content %}
+
+{# section with the list of works #}
+{% block credits %}
+<div class="container">
+    <div class="col-sm-12 credits">
+        <span>Designer</span>
+        <ul>
+            <li>Roman Serazhiev</li>
+        </ul>
+        <span>Developer</span>
+        <ul>
+            <li>Roman Serazhiev</li>
+        </ul>
+    </div>
+</div>
+
+{# opening the container div to close it in the base template to place the footer within the grid #}
+<div class="container">
+{% endblock credits %}
