@@ -6,6 +6,12 @@
     {# meta tags for Yandex and Google search verification #}
     <meta name="yandex-verification" content="8e9348b8d75328af" />
     <meta name="google-site-verification" content="oyealD5MVWoqbSoaaEF90Ix-mg43RAFOqaNQRsKANbs" />
+    
+    {# Cloudflare Web Analytics #}
+    <script
+      defer
+      src='https://static.cloudflareinsights.com/beacon.min.js'
+      data-cf-beacon='{"token": "4e7bbce03f0843dbad2ba986d8bb68ee"}'></script>
 
     {# CSS and JS links #}
 		{% block style %}<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}">{% endblock %}
