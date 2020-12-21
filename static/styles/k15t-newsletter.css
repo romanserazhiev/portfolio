@@ -32,12 +32,32 @@ body img {
   height: auto;
 }
 
+.arrow-top {
+  margin-bottom: 0;
+}
+
+.arrow {
+  background: var(--linkcolor);
+}
+
+.k15t-newsletter-button {
+  padding-bottom: 4em;
+}
+
+.white-background {
+  padding-top: 10em;
+}
+
+.k15t-newsletter-banner > .arrow-top span {
+  color: var(--linkcolor);
+}
+
 .k15t-subscribe-button {
   background-color: var(--maintextcolor);
   border: none;
   border-radius: 65px;
   height: 65px;
-  box-shadow: 0 6px 0 0 #29a376,0 6px 8px 0 rgba(21,132,93,.8);
+  box-shadow: 0 6px 0 0 #29a376,0 9px 10px 0 rgba(21,132,93,.8);
   font-size: 1.125rem;
   margin-bottom: 0;
   transition: box-shadow .1s,transform .1s;
@@ -59,9 +79,29 @@ body img {
   color: black !important;
 }
 
+.tap-line {
+  height: 0;
+  width: 0;
+}
+
+.tap-line > img {
+  height: 300px;
+  width: 100px;
+  position: relative;
+  bottom: 262px;
+}
+
+@media (min-width: 0) and (max-width: 576px) {
+  .tap-line > img {
+    bottom: 386px;
+    left: 80px;
+  }
+}
+
+
 .animated-newsletter-sign-up-full {
   margin-top: 5em;
-  margin-bottom: 10em;  
+  padding-bottom: 10em;
 }
 
 .animated-newsletter-sign-up {
@@ -71,7 +111,7 @@ body img {
   padding: 5em 3em 4em 3em;
   position: relative;
   transition: background .3s;
-  //z-index: 61;
+  z-index: 61;
 }
 
 .animated-newsletter-sign-up-full > .grid-right, .grid-bottom {
@@ -83,25 +123,44 @@ body img {
 }
 
 .animated-newsletter-sign-up-full > .grid-right > img {
-  left: 800px;
+  left: 900px;
   position: relative;
   top: 100px;
 }
 
+@media (min-width: 720px) and (max-width: 960px) {
+  .animated-newsletter-sign-up-full > .grid-right > img {
+    left: 750px;
+  }
+}
+
 .animated-newsletter-sign-up-full > .grid-bottom > img {
-  right: 150px;
+  right: 50px;
   bottom: 100px;
   position: relative;
 }
 
-.animated-newsletter-sign-up-full > .animated-newsletter-sign-up > 
+.animated-newsletter-sign-up-full .animated-newsletter-sign-up > 
+  .arrow-top, .circle-right, .dot-left, .wave-bottom, .dot-bottom {
+    height: 0;
+}
+
+@media (min-width: 720px) and (max-width: 960px) {
+  .animated-newsletter-sign-up-full .animated-newsletter-sign-up > 
+  .arrow-top > img {
+    right: 250px;
+  }
+}
+
+.animated-newsletter-sign-up-full .animated-newsletter-sign-up > 
   .arrow-top > img {
     bottom: 185px;
     position: relative;
+    right: 300px;
     width: 250px;
   }
 
-.animated-newsletter-sign-up-full > .animated-newsletter-sign-up > 
+.animated-newsletter-sign-up-full .animated-newsletter-sign-up > 
 .circle-right > img {
   left: 800px;
   position: relative;
@@ -109,7 +168,14 @@ body img {
   width: 150px;
 }
 
-.animated-newsletter-sign-up-full > .animated-newsletter-sign-up > 
+@media (min-width: 720px) and (max-width: 960px) {
+  .animated-newsletter-sign-up-full .animated-newsletter-sign-up > 
+.circle-right > img {
+  left: 650px;
+  }
+}
+
+.animated-newsletter-sign-up-full .animated-newsletter-sign-up > 
 .dot-left > img {
   position: relative;
   right: 100px;
@@ -117,17 +183,116 @@ body img {
   width: 50px;
 }
 
-.animated-newsletter-sign-up-full > .animated-newsletter-sign-up > 
+.animated-newsletter-sign-up-full .animated-newsletter-sign-up 
 .wave-bottom > img {
   width: 250px;
+  top: 20px;
+  position: relative;
 }
 
-.animated-newsletter-sign-up-full > .animated-newsletter-sign-up > 
+.animated-newsletter-sign-up-full .animated-newsletter-sign-up 
 .dot-bottom > img {
   width: 50px;
   left: 600px;
   position: relative;
   top: 40px;
+}
+
+.k15t_input_field, .k15t_input_field:focus {
+  border-bottom: 1px solid #25e9a4; 
+}
+
+.k15t_input {
+  color: white;
+  padding-bottom: 2em;
+  
+}
+
+.k15t_input + .k15t-subscribe-button {
+  width: 100%;
+}
+
+.k15t_input .email-required {
+  color: red;
+  margin-left: -3px;
+}
+
+.k15t_input_field {
+  background-color: #555D78;
+  color: white;
+  width: 100%;
+  height: 39px;
+  border: none;
+  border-bottom: 1px solid #25e9a4;
+  padding: 8px;
+}
+
+.k15t_input_field:hover {
+  background-color: #6b7596;
+}
+
+.k15t_input_field:placeholder-shown {
+  background-color: #555D78;
+  border-bottom: 1px solid #F2F3F7;
+  color: white;
+  vertical-align: middle;
+}
+
+.k15t_input_field:placeholder-shown::placeholder {
+  color: white;
+}
+
+.k15t_input_field:placeholder-shown:hover {
+  background-color: #6b7596;
+}
+
+.k15t_input_field:focus {
+  background-color: #eafff9;
+  color: #000c34;
+  border-bottom: 1px solid #25e9a4;
+  box-shadow: none;
+  outline: 0;
+}
+
+.k15t_input_field:focus::placeholder {
+  color: transparent;
+}
+
+.k15t_input_field:focus:hover {
+  background-color: #eafff9;
+}
+
+label {
+  display: block;
+}
+
+.animated-newsletter-sign-up__heading {
+  text-align: center;
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 1em;
+}
+
+.animated-newsletter-sign-up__heading > p {
+  color: white;
+}
+
+.k15t-privacy-note {
+  padding-top: 2em;
+  color: white;
+  font-size: 13px;
+}
+
+.k15t-privacy-note a {
+  border-bottom: 1px solid rgba(255,255,255,.4) !important;
+  color: white !important;
+}
+
+/* for Medium size only */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .tap-line > img {
+    left: 780px;
+  }
 }
 
 

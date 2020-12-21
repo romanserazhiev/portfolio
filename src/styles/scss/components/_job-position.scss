@@ -1,8 +1,8 @@
 .description {
     &-company {
         font-size: $large;
-        margin-bottom: 3rem;
         opacity: 0.5;
+        padding-bottom: 3rem;
 
         span {
             //font-size: $large;
@@ -46,22 +46,34 @@
 }
 
 .role-title {
+  padding-bottom: 4rem;
+  
   h1 {
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 4rem;
+    margin-bottom: 0;
     max-width: 900px;
   }
   
   .big-title {
-    font-size: 5rem;
+    font-size: 2rem;
     max-width: unset;
     text-align: center;
   }
 }
 
-@include media-breakpoint-up(md) {
-  .role-title h1 {
-    font-size: 3rem;
+@include media-breakpoint-only(md) {
+  .role-title {
+    .big-title {
+      font-size: 4rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .role-title {
+    .big-title {
+      font-size: 5rem;
+    }
   }
 }

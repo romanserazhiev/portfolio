@@ -10,7 +10,8 @@
   href="{{ url_for('static', filename='styles/k15t-newsletter.css') }}">
   
 <script
-  src="{{ url_for('static', filename='js/works/k15t/newsletter.js') }}" defer></script>
+  src="{{ url_for('static', filename='js/works/k15t/newsletter.js') }}"
+  defer></script>
 {% endblock head %}
 
 {# section with the list of works #}
@@ -22,134 +23,138 @@
 <div class="container">
   <div class="row role-title">
     <div class="col-md-12">
-      <h1 class="big-title">Programming the animation of&nbsp;the newsletter banner
-        and design of&nbsp;the &ldquo;Subscribe&rdquo; button</h1>
+      <h1 class="big-title">Design and programming of&nbsp;the
+        &ldquo;Subscribe&rdquo; button and animation of&nbsp;the newsletter
+        banner</h1>
     </div>
   </div>
   <div class="row description-company justify-content-center">
       <div class="col-md-8">
-          <span>Task: attract new subscribers by&nbsp;implementing
-            a&nbsp;nice-looking and smooth animation of&nbsp;the subscription
-            banner. Design the main &ldquo;Subscribe&rdquo; button to&nbsp;spark
-            the urge to&nbsp;click on&nbsp;it&nbsp;from site viewers.</span>
+          <span>Task: attract new subscribers by&nbsp;implementing new and catchy
+            animation of&nbsp;the subscription banner. Design the main 
+            &ldquo;Subscribe&rdquo; button to&nbsp;spark the urge to&nbsp;click
+            on&nbsp;it.</span>
       </div>
   </div>
+  <div class="row arrow-top">
+    <div class="col">
+      <span>Design and animation</span>
+    </div>
+  </div>
+  <div class="arrow"></div>
 </div>
 
-<div class="container-fluid k15t-newsletter">
+<div class="container-fluid k15t-newsletter-button">
   <div class="row justify-content-center">
       <button class="k15t-subscribe-button k15t-newsletter-wrapper" type="submit" value="submit">
         <span name="Subscribe to K15t newsletter" aria-label="submit the form">Subscribe</span>
       </button>
+      <div class="tap-line">
+        <img
+        src="{{ url_for('static', filename='images/works/k15t/newsletter/line.svg') }}"
+        alt=""/>
+      </div>
   </div>
 </div>
 
-{#
-<div class="container animated-newsletter-sign-up-full">
-  <div class="col grid-right hide-for-small-only">
-    <img
-    src="{{ url_for('static', filename='images/works/k15t/newsletter/dot-grid.svg') }}"
-    alt=""/>
-  </div>
-  <div class="row animated-newsletter-sign-up">
-    <div class="col arrow-top hide-for-small-only">
-      <img
-      src="{{ url_for('static', filename='images/works/k15t/newsletter/blue-arrow-top.svg') }}"
-      alt=""/>
-    </div>
-    <div class="col circle-right hide-for-small-only">
-      <img
-      src="{{ url_for('static', filename='images/works/k15t/newsletter/purple-circle-mid-right.svg') }}"
-      alt=""/>
-    </div>
-    <div class="col dot-left hide-for-small-only">
-      <img
-      src="{{ url_for('static', filename='images/works/k15t/newsletter/lavender-dot-mid-left.svg') }}"
-      alt=""/>
-    </div>
-    <div class="row align-center animated-newsletter-sign-up-wrapper js-form-content">
-      <div class="coll animated-newsletter-sign-up__heading">
-        <p>Be the first to know.<br>Sign up for our newsletter:</p>
-      </div>
-      <div class="col-sm-12 col-md-6">
-          <div class="js-form"><div class="content-wrapper"> 
-             <form action="/plugins/servlet/scroll-viewport/form-submit" class="aui conf-macro output-block" data-hasbody="true" data-macro-name="sp-form" enctype="application/x-www-form-urlencoded" id="158505827" method="POST" name="newsletter_en"> 
-              <input type="hidden" name="viewportId" value="57E60F0D016852B9E2A4694E053DB621"> 
-              <input type="hidden" name="pageId" value="158505827"> 
-              <input type="hidden" name="formPageId" value="158505827"> 
-              <input type="hidden" name="formName" value="newsletter_en"> 
-              <input type="hidden" name="formHandler" value="email"> 
-              <input type="text" name="url" value="" id="urlStyling"> 
-              <p> </p>
-              <div class="field-group sp-fieldname-email conf-macro output-block" data-hasbody="false" data-macro-name="sp-form-input"> 
-               <label for="ecccc67f7adddccc9dbc54bbded1900f">Email <span class="aui-icon icon-required">*</span> </label> 
-               <input class="text  " type="text" id="ecccc67f7adddccc9dbc54bbded1900f" name="email" title="Email" placeholder="Your email" value=""> 
-              </div> 
-              <p> </p>
-              <p> </p>
-              <div class="field-group sp-fieldname-acFormId conf-macro output-block" data-hasbody="false" data-macro-name="sp-form-hidden"> 
-               <input type="hidden" name="acFormId" value="16"> 
-              </div> 
-              <p> </p> 
-              <div class="container-fluid margin-top-1"> 
-               <div class="row align-middle"> 
-                <div class="col form-submit-button"> 
-                 <button class="button--round button--long button--long-light primary button--green-on-white" type="submit" value="submit"> <span name="submit the form" aria-label="submit the form">Subscribe</span> </button> 
-                </div> 
-                <div class="col padding-top-1 padding-bottom-1 text-center"> 
-                 <p class="belehrung-text-for-forms">With the submission of this form, you agree with our <a data-macro-name="sp-plaintextbody-link" href="/legal/privacy-statement" class="conf-macro output-inline" data-hasbody="true">privacy statement</a>.</p> 
-                </div> 
-               </div> 
-              </div> 
-             </form>
-            </div></div>
-      </div>
 
-      
+<div class="container-fluid k15t-newsletter-banner white-background">
+  <div class="row arrow-top">
+    <div class="col">
+      <span>Animation and programming</span>
     </div>
-      <div class="col wave-bottom hide-for-small-only">
-        <img
-        src="{{ url_for('static', filename='images/works/k15t/newsletter/yellow-wave-bottom-left.svg') }}"
-        alt=""/>
-      </div>
-      <div class="col dot-bottom hide-for-small-only">
-        <img
-        src="{{ url_for('static', filename='images/works/k15t/newsletter/red-dot-bottom-right.svg') }}"
-        alt=""/>
-      </div>
   </div>
-  <div class="col grid-bottom hide-for-small-only">
+  <div class="arrow"></div>
+  
+  
+  
+  <div class="container animated-newsletter-sign-up-full">
+    <div class="grid-right d-none d-md-block">
       <img
       src="{{ url_for('static', filename='images/works/k15t/newsletter/dot-grid.svg') }}"
       alt=""/>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-10 animated-newsletter-sign-up">
+        <div class="arrow-top d-none d-md-block">
+          <img
+          src="{{ url_for('static', filename='images/works/k15t/newsletter/blue-arrow-top.svg') }}"
+          alt=""/>
+        </div>
+        <div class="circle-right d-none d-md-block">
+          <img
+          src="{{ url_for('static', filename='images/works/k15t/newsletter/purple-circle-mid-right.svg') }}"
+          alt=""/>
+        </div>
+        <div class="dot-left d-none d-md-block">
+          <img
+          src="{{ url_for('static', filename='images/works/k15t/newsletter/lavender-dot-mid-left.svg') }}"
+          alt=""/>
+        </div>
+        <div class="row justify-content-center animated-newsletter-sign-up-wrapper js-form-content">
+          <div class="coll animated-newsletter-sign-up__heading">
+            <p>Be the first to know.<br>Sign up for our newsletter:</p>
+          </div>
+          <div class="col-sm-12 col-md-6">  
+            <form> 
+              <div class="k15t_input"> 
+               <label for="k15t_newsletter_email">Email <span class="email-required">*</span> </label> 
+               <input class="k15t_input_field" type="text" autocomplete="off" placeholder="Your email" value=""> 
+              </div> 
+
+               <button class="k15t-subscribe-button k15t-newsletter-wrapper">
+                  <span>Subscribe</span>
+                </button>
+              
+                <div class="k15t-privacy-note text-center"> 
+                 <p>With the submission of this form, you agree with our <a href="">privacy statement</a>.</p> 
+                </div> 
+              </form>
+          </div>
+        </div>
+          <div class="wave-bottom d-none d-md-block">
+            <img
+            src="{{ url_for('static', filename='images/works/k15t/newsletter/yellow-wave-bottom-left.svg') }}"
+            alt=""/>
+          </div>
+          <div class="dot-bottom d-none d-md-block">
+            <img
+            src="{{ url_for('static', filename='images/works/k15t/newsletter/red-dot-bottom-right.svg') }}"
+            alt=""/>
+          </div>
+      </div>
+    </div>
+    <div class="grid-bottom d-none d-md-block">
+        <img
+        src="{{ url_for('static', filename='images/works/k15t/newsletter/dot-grid.svg') }}"
+        alt=""/>
+    </div>
   </div>
-  
 </div>
-#}
+
 
 {% endblock content %}
 
-{# section with the list of works #}
 {% block credits %}
 <div class="container">
-    <div class="row">
-      <div class="col-md-4 col-lg-2 credits">
-          <span>Designer of animation</span>
-          <ul>
-              <li>Roman Serazhiev</li>
-          </ul>
-          <span>Developer</span>
-          <ul>
-              <li>Roman Serazhiev</li>
-          </ul>
-      </div>
-      <div class="col-md-4 col-lg-2 credits">
-        <span>Overall design</span>
+  <div class="row">
+    <div class="col-6 col-md-2 credits">
+        <span>Designer of animation</span>
         <ul>
-            <li>K15t</li>
+            <li>Roman Serazhiev</li>
         </ul>
-        </div>
+        <span>Developer</span>
+        <ul>
+            <li>Roman Serazhiev</li>
+        </ul>
     </div>
+    <div class="col-6 col-md-2 credits">
+      <span>Overall design by</span>
+      <ul>
+          <li>K15t</li>
+      </ul>
+    </div>
+  </div>
 </div>
 
 {# opening the container div to close it in the base template to place the footer within the grid #}

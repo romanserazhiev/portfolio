@@ -79,6 +79,10 @@ body {
         }
 
         .work-announce {
+          .announce-icons {
+            display: flex;  
+          }
+          
           .announce-title {
             img {
               width: 30px;
@@ -121,10 +125,6 @@ body {
                         
                     }
                 }
-            }
-
-            .slim {
-                height: 20rem;
             }
 
             img {
@@ -265,7 +265,7 @@ body {
 }
 
 .credits {
-    padding: 1rem 0 0 0;
+    padding-top: 1rem;
 
     span {
         font-size: 14px;
@@ -280,4 +280,8 @@ body {
             font-size: 14px;
         }
     }
+}
+
+.white-background {
+  background: white;
 }

@@ -1,16 +1,20 @@
 $(function() {
   newNewsletterSignUp();
+  // preventing from scrolling up when clicking on the Submit button
+  $('.k15t-subscribe-button').on('click', function(e) {
+    e.preventDefault();
+  })
 });
 
 
 function newNewsletterSignUp () {
-  var $newsletterBanner = $('.k15t-newsletter');
+  var $newsletterBanner = $('.animated-newsletter-sign-up-full');
 
   if (!$newsletterBanner.length || !$newsletterBanner.is(':visible')) {
       return false;
   }
 
-  const $newsletterBannerWrapper = $('.k15t-newsletter-wrapper', $newsletterBanner);
+  const $newsletterBannerWrapper = $('.animated-newsletter-sign-up', $newsletterBanner);
   let oldBannerOpacity = 1;
   let flag = true;
 
