@@ -277,17 +277,6 @@ label {
   color: white;
 }
 
-.k15t-privacy-note {
-  padding-top: 2em;
-  color: white;
-  font-size: 13px;
-}
-
-.k15t-privacy-note a {
-  border-bottom: 1px solid rgba(255,255,255,.4) !important;
-  color: white !important;
-}
-
 /* for Medium size only */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .tap-line > img {
