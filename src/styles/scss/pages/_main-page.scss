@@ -1,7 +1,7 @@
 body {
 
     font-family: var(--mainFontFamily);
-
+    
     img {
         height: 100%;
         width: 100%;
@@ -60,6 +60,30 @@ body {
         */
 
         .intro {
+          
+          h1 {
+            margin-bottom: 0;
+          }
+          
+           .social-section {
+             a {
+                border-bottom: 0;
+                
+                img {
+                  transition: all 0.8s cubic-bezier(0, 0, 0, 1);
+                  
+                  &:hover {
+                    -webkit-transform: scale(1.5);
+                    -ms-transform: scale(1.5);
+                    transform: scale(1.5);
+                  }
+                }
+             }
+              .social-icon {
+                width: 30px;
+              }
+            }
+
             .about-section {
                 img {
                     border-radius: 50%;

@@ -8,7 +8,20 @@
 {% block about_me %}
   
   <div class="col-9 col-xl-7">
-    <h1 class="display-3">Roman Serazhiev
+    <h1>Roman Serazhiev</h1>
+    <div class="social-section">      
+      
+      {% for socialnetworkname, socialnetworkurl  in socialnetworks.items() %}
+        {% set socialnetworkimage = 'images/about/' + socialnetworkname + '.svg' %}
+        
+        <a href="{{ socialnetworkurl }}">
+          <img
+          class="social-icon"
+          src="{{ url_for('static', filename=socialnetworkimage) }}"
+          alt="{{ socialnetwork }}">
+        </a>
+      {% endfor %}
+    </div>
   </div>
   
   {#

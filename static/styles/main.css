@@ -8576,6 +8576,28 @@ body .container-fluid .intro {
   padding-top: 2rem;
   padding-bottom: 3rem;
 }
+body .container .intro h1,
+body .container-fluid .intro h1 {
+  margin-bottom: 0;
+}
+body .container .intro .social-section a,
+body .container-fluid .intro .social-section a {
+  border-bottom: 0;
+}
+body .container .intro .social-section a img,
+body .container-fluid .intro .social-section a img {
+  transition: all 0.8s cubic-bezier(0, 0, 0, 1);
+}
+body .container .intro .social-section a img:hover,
+body .container-fluid .intro .social-section a img:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+body .container .intro .social-section .social-icon,
+body .container-fluid .intro .social-section .social-icon {
+  width: 30px;
+}
 body .container .intro .about-section img,
 body .container-fluid .intro .about-section img {
   border-radius: 50%;

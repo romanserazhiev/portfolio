@@ -8,7 +8,12 @@ app = Flask(__name__)
 @app.route("/")
 def index():
   tshirts = ['cat_tshirt.png', 'lama_tshirt.png']
-  return render_template("index.html", tshirts=tshirts)
+  socialnetworks = {
+    'telegram': 'https://t.me/romaserazhiev',
+    'twitter': 'https://twitter.com/romanserazhiev',
+    'youtube': 'https://www.youtube.com/user/romaserazhiev'
+  }
+  return render_template("index.html", tshirts=tshirts, socialnetworks=socialnetworks)
 
 @app.route("/works")
 def works():
