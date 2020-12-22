@@ -45,7 +45,7 @@ body img {
 }
 
 .white-background {
-  padding-top: 10em;
+  padding-top: 3rem;
 }
 
 .k15t-newsletter-banner > .arrow-top span {
@@ -64,6 +64,14 @@ body img {
   width: 450px;
   -webkit-appearance: button;
 }
+
+@media (max-width: 768px) {
+  .k15t-subscribe-button {
+    width: 350px;
+  }
+}
+
+
 
 .k15t-subscribe-button:hover {
   background-color: #33ffc5;
@@ -91,13 +99,14 @@ body img {
   bottom: 262px;
 }
 
+/*
 @media (min-width: 0) and (max-width: 576px) {
   .tap-line > img {
     bottom: 386px;
     left: 80px;
   }
 }
-
+*/
 
 .animated-newsletter-sign-up-full {
   margin-top: 5em;
@@ -128,9 +137,9 @@ body img {
   top: 100px;
 }
 
-@media (min-width: 720px) and (max-width: 960px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
   .animated-newsletter-sign-up-full > .grid-right > img {
-    left: 750px;
+    left: 500px;
   }
 }
 
@@ -145,20 +154,28 @@ body img {
     height: 0;
 }
 
-@media (min-width: 720px) and (max-width: 960px) {
+.animated-newsletter-sign-up-full .animated-newsletter-sign-up > 
+  .arrow-top > img {
+    position: relative;
+  }
+  
+@media (min-width: 768px) and (max-width: 991.98px) {
   .animated-newsletter-sign-up-full .animated-newsletter-sign-up > 
   .arrow-top > img {
-    right: 250px;
+    bottom: 140px;
+    right: 200px;
+    width: 150px;
   }
 }
 
-.animated-newsletter-sign-up-full .animated-newsletter-sign-up > 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .animated-newsletter-sign-up-full .animated-newsletter-sign-up > 
   .arrow-top > img {
-    bottom: 185px;
-    position: relative;
-    right: 300px;
+    bottom: 180px;
+    right: 200px;
     width: 250px;
   }
+}
 
 .animated-newsletter-sign-up-full .animated-newsletter-sign-up > 
 .circle-right > img {
@@ -168,10 +185,29 @@ body img {
   width: 150px;
 }
 
-@media (min-width: 720px) and (max-width: 960px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .animated-newsletter-sign-up-full .animated-newsletter-sign-up > 
+.circle-right > img {
+  left: 500px;
+  width: 130px;
+  top: 100px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
   .animated-newsletter-sign-up-full .animated-newsletter-sign-up > 
 .circle-right > img {
   left: 650px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .animated-newsletter-sign-up-full .animated-newsletter-sign-up > 
+  .arrow-top > img {
+    bottom: 185px;
+    position: relative;
+    right: 300px;
+    width: 250px;
   }
 }
 
@@ -190,12 +226,27 @@ body img {
   position: relative;
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .animated-newsletter-sign-up-full .animated-newsletter-sign-up 
+.wave-bottom > img {
+    width: 150px;
+    top: 40px;
+  }
+}
+
 .animated-newsletter-sign-up-full .animated-newsletter-sign-up 
 .dot-bottom > img {
   width: 50px;
   left: 600px;
   position: relative;
   top: 40px;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  animated-newsletter-sign-up-full .animated-newsletter-sign-up 
+.dot-bottom > img {
+    left: 400px;
+  }
 }
 
 .k15t_input_field, .k15t_input_field:focus {
@@ -273,17 +324,21 @@ label {
   margin-bottom: 1em;
 }
 
-.animated-newsletter-sign-up__heading > p {
-  color: white;
-}
-
-/* for Medium size only */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .tap-line > img {
-    left: 780px;
+@media (max-width: 767.98px) {
+  .animated-newsletter-sign-up__heading {
+    font-size: 38px;
   }
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .animated-newsletter-sign-up__heading {
+    font-size: 40px;
+  }
+}
+
+.animated-newsletter-sign-up__heading > p {
+  color: white;
+}
 
 .credits {
   padding: 1rem 15px 0;
