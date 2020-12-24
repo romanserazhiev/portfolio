@@ -46,10 +46,14 @@
 
 <div class="container-fluid k15t-newsletter-button">
   <div class="row justify-content-center">
-      <button class="k15t-subscribe-button k15t-newsletter-wrapper" type="submit" value="submit">
+      <button 
+      ontouchstart=""
+      class="k15t-subscribe-button k15t-newsletter-wrapper"
+      type="submit"
+      value="submit">
         <span name="Subscribe to K15t newsletter" aria-label="submit the form">Subscribe</span>
       </button>
-      <div class="tap-line">
+      <div class="tap-line d-none d-md-block">
         <img
         src="{{ url_for('static', filename='images/works/k15t/newsletter/line.svg') }}"
         alt=""/>
@@ -102,7 +106,7 @@
                <input class="k15t_input_field" type="text" autocomplete="off" placeholder="Your email" value=""> 
               </div> 
 
-               <button class="k15t-subscribe-button k15t-newsletter-wrapper">
+               <button ontouchstart="" class="k15t-subscribe-button k15t-newsletter-wrapper">
                   <span>Subscribe</span>
                 </button>
 
