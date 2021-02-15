@@ -12,7 +12,7 @@
     <div class="social-section">      
       
       {% for socialnetworkname, socialnetworkurl  in socialnetworks.items() %}
-        {% set socialnetworkimage = 'images/about/' + socialnetworkname + '.svg' %}
+        {% set socialnetworkimage = 'assets/images/about/' + socialnetworkname + '.svg' %}
         
         <a href="{{ socialnetworkurl }}">
           <img
@@ -24,10 +24,10 @@
     </div>
   </div>
   
-  {#
+  {# currently not rendered
   <div class="about-section">
     <div class="logo">
-      <img src="{{ url_for('static', filename='images/about/roman.jpeg') }}">
+      <img src="{{ url_for('static', filename='assets/images/about/roman.jpeg') }}">
     </div>
     <h1>Roman Serazhiev</h1>
   </div>

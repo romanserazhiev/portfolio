@@ -2,7 +2,7 @@ from flask import Flask, render_template
 from datetime import datetime
 import random
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="src/templates")
 
 # flask routes
 @app.route("/")
@@ -83,7 +83,7 @@ def catchTester():
 
 
 # setting the static folder to root of the website when running in DEBUG (on local machine)
-# in PROD static resources should be handled by Apache or Nginx
+# in PROD static resources are handled by Apache or Nginx
 if app.config['DEBUG']:
     from werkzeug.middleware.shared_data import SharedDataMiddleware
     import os
@@ -91,6 +91,7 @@ if app.config['DEBUG']:
       '/': os.path.join(os.path.dirname(__file__), '')
     })
 
+# injecting “now” to point to datetime.utcnow()
 @app.context_processor
 def inject_now():
     return dict(now=datetime.utcnow())
