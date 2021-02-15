@@ -13,36 +13,36 @@ def index():
     'twitter': 'https://twitter.com/romanserazhiev',
     'youtube': 'https://www.youtube.com/user/romaserazhiev'
   }
-  return render_template("index.html", tshirts=tshirts, socialnetworks=socialnetworks)
+  return render_template("pages/index.html", tshirts=tshirts, socialnetworks=socialnetworks)
 
 @app.route("/works")
 def works():
-  return render_template("works.html")
+  return render_template("/pages/works.html")
 
 @app.route("/mac-leaflet")
 def macLeaflet():
-  return render_template("mac-leaflet.html")
+  return render_template("pages/mac-leaflet.html")
 
 @app.route("/k15t/atlassian-virtual-summit")
 def k15tAtlassianVirtualSummit():
-  return render_template("atlassian-virtual-summit.html")
+  return render_template("pages/atlassian-virtual-summit.html")
   
 @app.route("/k15t/newsletter")
 def k15tNewsletter():
-  return render_template("k15t-newsletter.html")
+  return render_template("pages/k15t_newsletter.html")
 
   
 @app.route("/k15t/team-up-forum")
 def k15tTeamUpForum():
-  return render_template("team-up-forum.html")
+  return render_template("pages/team-up-forum.html")
 
 @app.route("/k15t/careers")
 def k15tCareers():
-  return render_template("careers.html")
+  return render_template("pages/careers.html")
 
 @app.route("/k15t/webinar")
 def k15tWebinar():
-  return render_template("webinar.html")
+  return render_template("pages/webinar.html")
 
 @app.route("/k15t/support")
 def k15tSupport():
@@ -54,32 +54,32 @@ def k15tSupport():
     'k15t_work_place.jpg': 'My work place, July 2015'
   }
   photos_sample = random.sample(photos.items(), 2)
-  return render_template("k15t_support.html", title=title, photos_sample=photos_sample)
+  return render_template("pages/k15t_support.html", title=title, photos_sample=photos_sample)
 
 @app.route("/podcasts/around-design/ep1")
 def podcastAroundDesignEp1():
   title = 'Graphical design for the first episode of the \u00ABPodcast Around Design\u00BB'
-  return render_template("podcast_cover_ep1.html", title=title)
+  return render_template("pages/podcast_cover_ep1.html", title=title)
 
 @app.route("/podcasts/around-design/cover")
 def podcastAroundDesignCover():
   title = 'Graphical design for the \u00ABPodcast Around Design\u00BB cover'
-  return render_template("podcast_cover.html", title=title)
+  return render_template("pages/podcast_cover.html", title=title)
 
 @app.route("/catch/support-engineer")
 def catchSupportEngineer():
   title = 'Support Engineer at Catch Software'
-  return render_template("catch_support.html", title=title)
+  return render_template("pages/catch_support.html", title=title)
 
 @app.route("/catch/consultant")
 def catchImplementationConsultant():
   title = 'Implementation Consultant at Catch Software'
-  return render_template("catch_consultant.html", title=title)
+  return render_template("pages/catch_consultant.html", title=title)
   
 @app.route("/catch/tester")
 def catchTester():
   title = 'Test Analyst at Catch Software'
-  return render_template("catch_tester.html", title=title)
+  return render_template("pages/catch_tester.html", title=title)
 
 
 # setting the static folder to root of the website when running in DEBUG (on local machine)

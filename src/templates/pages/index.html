@@ -6,39 +6,55 @@
 
 {% block head %}
 {# Additional metadata #}
-<meta name="title" property="og:title" content="Roman Serazhiev">
-<meta property="og:type" content="Portfolio">
-<meta name="image" property="og:image" content="{{ url_for('static', filename='userpic-retina.jpg') }}">
-<meta name="description" property="og:description" content="Portfolio and blog of Roman Serazhiev">
+<meta 
+  name="title"
+  property="og:title"
+  content="Roman Serazhiev"
+/>
+<meta
+property="og:type"
+content="Portfolio"
+/>
+<meta
+name="image"
+property="og:image"
+content="{{ url_for('static', filename='assets/images/about/userpic-retina.jpg') }}"
+/>
+<meta
+name="description"
+property="og:description"
+content="Portfolio and blog of Roman Serazhiev"
+/>
 {% endblock head %}
 
 {# section about me #}
 {% block about_me %}
-  
   <div class="col-9 col-xl-7">
     <h1>Roman Serazhiev</h1>
-    <div class="social-section">      
-      
+    <section class="social-section">      
       {% for socialnetworkname, socialnetworkurl  in socialnetworks.items() %}
         {% set socialnetworkimage = 'assets/images/about/' + socialnetworkname + '.svg' %}
-        
         <a href="{{ socialnetworkurl }}">
           <img
-          class="social-icon"
-          src="{{ url_for('static', filename=socialnetworkimage) }}"
-          alt="{{ socialnetwork }}">
+            class="social-icon"
+            src="{{ url_for('static', filename=socialnetworkimage) }}"
+            alt="{{ socialnetwork }}"
+          >
         </a>
       {% endfor %}
-    </div>
+    </section>
   </div>
   
   {# currently not rendered
-  <div class="about-section">
+  <section class="about-section">
     <div class="logo">
-      <img src="{{ url_for('static', filename='assets/images/about/roman.jpeg') }}">
+      <img 
+        src="{{ url_for('static', filename='assets/images/about/roman.jpeg') }}"
+        alt="Photo of Roman Serazhiev"
+      >
     </div>
     <h1>Roman Serazhiev</h1>
-  </div>
+  </section>
   #}
 {% endblock about_me %}
 
@@ -46,9 +62,6 @@
 {% block content %}
 
 {# List of works #}
-{% include 'works_list.html' %}
-
-{# The sponsor box #}
-{# {% include 'highlight.html' %} #}
+{% include 'components/works_list.html' %}
 
 {% endblock content %}

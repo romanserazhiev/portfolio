@@ -8526,37 +8526,6 @@ body .image-description {
   margin-top: 0.5rem;
   margin-bottom: 3rem;
 }
-body .container,
-body .container-fluid {
-  /* 
-  .giant {
-      font-size: 3rem;
-      padding-bottom: 6rem;
-
-      &-white {
-          color: white;
-      }
-  }
-
-  @include media-breakpoint-up(sm) {
-      .giant {
-          font-size: 4rem;
-      }
-  }
-
-  @include media-breakpoint-up(md) {
-      .giant {
-          font-size: 6rem;
-      }
-  }
-
-  @include media-breakpoint-up(lg) {
-      .giant {
-          font-size: 8rem;
-      }
-  }
-  */
-}
 body .container a,
 body .container-fluid a {
   text-decoration: none;

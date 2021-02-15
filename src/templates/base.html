@@ -1,47 +1,60 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     {# meta tags for Yandex and Google search verification #}
     <meta name="yandex-verification" content="8e9348b8d75328af" />
-    <meta name="google-site-verification" content="oyealD5MVWoqbSoaaEF90Ix-mg43RAFOqaNQRsKANbs" />
-    
+    <meta
+      name="google-site-verification"
+      content="oyealD5MVWoqbSoaaEF90Ix-mg43RAFOqaNQRsKANbs"
+    />
+
     {# Cloudflare Web Analytics #}
     <script
       defer
-      src='https://static.cloudflareinsights.com/beacon.min.js'
-      data-cf-beacon='{"token": "4e7bbce03f0843dbad2ba986d8bb68ee"}'></script>
-    
-    {# Metadata #}  
-    <meta name="author" content="Roman Serazhiev">
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "4e7bbce03f0843dbad2ba986d8bb68ee"}'
+    ></script>
 
-    {# CSS and JS links #}
-		{% block style %}<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='src/styles/main.css') }}">{% endblock %}
+    {# Metadata #}
+    <meta name="author" content="Roman Serazhiev" />
+
+    {# CSS and JS links #} {% block style %}
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='src/styles/main.css') }}"
+    />
+    {% endblock %}
     <script src="{{ url_for('static', filename='libraries/jquery/jquery-3.4.1.slim.min.js') }}"></script>
-    
+
     {# favicon #}
-    <link rel="shortcut icon" href="{{ url_for('static', filename='assets/images/about/userpic-2x.jpg') }}" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='assets/images/about/userpic-2x.jpg') }}"
+      type="image/x-icon"
+    />
 
     {# icon for Web Clips on iOS #}
-    <link rel="apple-touch-icon" href="{{ url_for('static', filename='assets/images/about/userpic-2x.jpg') }}">
-    
-    {# additional CSS and JS files #}
-    {% block head %}{% endblock head %}
-    
-    {# title of the page, otherwise use "Roman Serazhiev" #}
-    <title>{% block title %}Roman Serazhiev{% endblock %}</title>
+    <link
+      rel="apple-touch-icon"
+      href="{{ url_for('static', filename='assets/images/about/userpic-2x.jpg') }}"
+    />
 
+    {# additional CSS and JS files #} {% block head %}{% endblock head %} {#
+    title of the page, otherwise use "Roman Serazhiev" #}
+    <title>{% block title %}Roman Serazhiev{% endblock %}</title>
   </head>
   <body>
     <div class="container">
-      <div class="row intro">
-        {% block about_me %}{% endblock about_me %}
-        {% include 'menu.html' %}
-      </div>
+      <header class="row intro">
+        {% block about_me %}{% endblock about_me %} 
+        {% include '/components/menu.html' %}
+      </header>
       {% block content%}{% endblock content %}
       {% block credits%}{% endblock credits %}
-      {% include 'footer.html' %}
+      {% include 'components/footer.html' %}
     </div>
   </body>
 </html>

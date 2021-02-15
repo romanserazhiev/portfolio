@@ -12,10 +12,10 @@
   ('/blog/', 'blog', 'Blog')
 #}
 
-<div class="ml-auto col-3 index-menu">
+<nav class="ml-auto col-3 index-menu">
   <ul>
     {% for href, id, caption in navigation_bar %}
     <li{% if id == active_page %} class="active"{% endif %}><a href="{{ href|e }}">{{ caption|e }}</a></li>
     {% endfor %}
   </ul>
-</div>
+</nav>
