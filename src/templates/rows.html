@@ -20,7 +20,7 @@
   <div class="col-md-4 work-announce">
   {% endif %}
     {# Setting the path to the image of the cover by taking the file name from the database #}
-    {% set pathImage = 'images/works/' + work.image_url_path %}
+    {% set pathImage = 'assets/images/works/' + work.image_url_path %}
     <a href="{{ work.url }}" {% if work.url == '' %}class="not-active"{% endif %}>
       <div class="preview {{ work.class }}">
         {# If 'video' is defined in the database, it would be rendered instead of the cover image #}
@@ -43,12 +43,12 @@
           <span>
             <div class="announce-icons">
               {% if work.type is defined %}
-                {% set typeImage = 'images/works/' + work.type + '.svg'%}
+                {% set typeImage = 'assets/images/works/' + work.type + '.svg'%}
                 <img class="work-type-icon" src="{{ url_for('static', filename=typeImage) }}">
               {% endif %}
             
               {% if work.additional_type is defined %}
-                {% set typeImage = 'images/works/' + work.additional_type + '.svg'%}
+                {% set typeImage = 'assets/images/works/' + work.additional_type + '.svg'%}
                 <img class="work-type-icon" src="{{ url_for('static', filename=typeImage) }}">
               {% endif %}
             </div>

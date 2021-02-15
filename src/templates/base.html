@@ -17,20 +17,14 @@
     <meta name="author" content="Roman Serazhiev">
 
     {# CSS and JS links #}
-    {% block style %}<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}">{% endblock %}
-    <script src="{{ url_for('static', filename='js/jquery-3.4.1.slim.min.js') }}"></script>
-
+		{% block style %}<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='src/styles/main.css') }}">{% endblock %}
+    <script src="{{ url_for('static', filename='libraries/jquery/jquery-3.4.1.slim.min.js') }}"></script>
+    
     {# favicon #}
-    <link rel="shortcut icon" href="{{ url_for('static', filename='userpic-2x.jpg') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='assets/images/about/userpic-2x.jpg') }}" type="image/x-icon">
 
     {# icon for Web Clips on iOS #}
-    <link rel="apple-touch-icon" href="{{ url_for('static', filename='userpic-2x.jpg') }}">
-    
-    {# Vue.js #}
-    {# dev version #}
-    {# <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> #}
-    {# production version #}
-    {# <script src="https://cdn.jsdelivr.net/npm/vue"></script> #}
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='assets/images/about/userpic-2x.jpg') }}">
     
     {# additional CSS and JS files #}
     {% block head %}{% endblock head %}
@@ -42,16 +36,12 @@
   <body>
     <div class="container">
       <div class="row intro">
-
         {% block about_me %}{% endblock about_me %}
         {% include 'menu.html' %}
-       
       </div>
-
       {% block content%}{% endblock content %}
       {% block credits%}{% endblock credits %}
       {% include 'footer.html' %}
-
     </div>
   </body>
 </html>
