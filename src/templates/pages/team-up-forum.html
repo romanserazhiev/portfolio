@@ -5,44 +5,35 @@
 
 {# section with the list of works #}
 {% block content %}
-
-{# closing the container div from the base template to introduce a fluid div #}
-</div>
-
-<div class="container-fluid row-gradient">
-  <div class="row work-title white">
-    <h1>Programming of&nbsp;the landing page of&nbsp;K15t&rsquo;s &times; Scandio&rsquo;s Team Up&nbsp;Forum</h1>
-  </div>  
-  <div class="row justify-content-center">
-    <div class="col-lg-9">
-      <video class="video-in-row" playsinline muted autoplay loop>
-        <source src="{{ url_for('static', filename='assets/images/works/k15t/team-up-forum.mp4') }}" type="video/mp4">
-      </video>
+  <main class="container-fluid row-gradient">
+    <div class="row work-title white">
+      <h1>Programming of&nbsp;the landing page of&nbsp;K15t&rsquo;s &times; Scandio&rsquo;s Team Up&nbsp;Forum</h1>
+    </div>  
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <video class="video-in-row" playsinline muted autoplay loop>
+          <source src="{{ url_for('static', filename='assets/images/works/k15t/team-up-forum.mp4') }}" type="video/mp4">
+        </video>
+      </div>
     </div>
-  </div>
-</div>
-
+  </main>
 {% endblock content %}
 
 {% block credits %}
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-4 col-lg-2 credits">
-      <span>Developer</span>
-      <ul>
-          <li>Roman Serazhiev</li>
-      </ul>
+  <aside class="container">
+    <div class="row">
+      <div class="col-md-4 col-lg-2 credits">
+        <span>Developer</span>
+        <ul>
+            <li>Roman Serazhiev</li>
+        </ul>
+      </div>
+      <div class="col-md-4 col-lg-2 credits">
+        <span>Design by</span>
+        <ul>
+            <li>K15t</li>
+        </ul>
+      </div>
     </div>
-    <div class="col-md-4 col-lg-2 credits">
-      <span>Design by</span>
-      <ul>
-          <li>K15t</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-{# opening the container div to close it in the base template to place the footer within the grid #}
-<div class="container">
+  </aside>
 {% endblock credits %}

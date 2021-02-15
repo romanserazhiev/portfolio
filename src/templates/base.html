@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
 
-    {# meta tags for Yandex and Google search verification #}
+    {# Metadata for Yandex and Google search verification #}
     <meta name="yandex-verification" content="8e9348b8d75328af" />
     <meta
       name="google-site-verification"
@@ -17,7 +18,7 @@
       data-cf-beacon='{"token": "4e7bbce03f0843dbad2ba986d8bb68ee"}'
     ></script>
 
-    {# Metadata #}
+    {# Metadata for search engines #}
     <meta name="author" content="Roman Serazhiev" />
 
     {# CSS and JS links #} {% block style %}
@@ -47,14 +48,14 @@
     <title>{% block title %}Roman Serazhiev{% endblock %}</title>
   </head>
   <body>
-    <div class="container">
-      <header class="row intro">
+    <header class="container">
+      <div class="row intro">
         {% block about_me %}{% endblock about_me %} 
         {% include '/components/menu.html' %}
-      </header>
-      {% block content%}{% endblock content %}
-      {% block credits%}{% endblock credits %}
-      {% include 'components/footer.html' %}
-    </div>
+      </div>
+    </header>
+    {% block content%}{% endblock content %}
+    {% block credits%}{% endblock credits %}
+    {% include 'components/footer.html' %}
   </body>
 </html>

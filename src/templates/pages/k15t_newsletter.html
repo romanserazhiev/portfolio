@@ -16,128 +16,118 @@
 
 {# section with the list of works #}
 {% block content %}
-
-{# closing the container div from the base template to introduce a fluid div #}
-</div>
-
-<div class="container">
-  <div class="row role-title">
-    <div class="col-md-12">
-      <h1 class="big-title">Design and programming of&nbsp;the
-        &ldquo;Subscribe&rdquo; button and animation of&nbsp;the newsletter
-        banner</h1>
-    </div>
-  </div>
-  <div class="row description-company justify-content-center">
-      <div class="col-md-8">
+  <main>
+    <div class="container">
+      <div class="row role-title">
+        <div class="col-md-12">
+          <h1 class="big-title">Design and programming of&nbsp;the
+            &ldquo;Subscribe&rdquo; button and animation of&nbsp;the newsletter
+            banner</h1>
+        </div>
+      </div>
+      <div class="row description-company justify-content-center">
+        <div class="col-md-8">
           <span>Task: attract new subscribers by&nbsp;implementing new and catchy
             animation of&nbsp;the subscription banner. Design the main 
             &ldquo;Subscribe&rdquo; button to&nbsp;spark the urge to&nbsp;click
             on&nbsp;it.</span>
+        </div>
       </div>
-  </div>
-  <div class="row arrow-top">
-    <div class="col">
-      <span>Design and animation</span>
-    </div>
-  </div>
-  <div class="arrow"></div>
-</div>
-
-<div class="container-fluid k15t-newsletter-button">
-  <div class="row justify-content-center">
-      <button 
-      ontouchstart=""
-      class="k15t-subscribe-button k15t-newsletter-wrapper"
-      type="submit"
-      value="submit">
-        <span name="Subscribe to K15t newsletter" aria-label="submit the form">Subscribe</span>
-      </button>
-      <div class="tap-line d-none d-md-block">
-        <img
-        src="{{ url_for('static', filename='assets/images/works/k15t/newsletter/line.svg') }}"
-        alt=""/>
+      <div class="row arrow-top">
+        <div class="col">
+          <span>Design and animation</span>
+        </div>
       </div>
-  </div>
-</div>
-
-
-<div class="container-fluid k15t-newsletter-banner white-background">
-  <div class="row arrow-top">
-    <div class="col">
-      <span>Animation and programming</span>
+      <div class="arrow"></div>
     </div>
-  </div>
-  <div class="arrow"></div>
-  
-  
-  
-  <div class="container animated-newsletter-sign-up-full">
-    <div class="grid-right d-none d-md-block">
-      <img
-      src="{{ url_for('static', filename='assets/images/works/k15t/newsletter/dot-grid.svg') }}"
-      alt=""/>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-md-10 animated-newsletter-sign-up">
-        <div class="arrow-top d-none d-md-block">
-          <img
-          src="{{ url_for('static', filename='assets/images/works/k15t/newsletter/blue-arrow-top.svg') }}"
-          alt=""/>
-        </div>
-        <div class="circle-right d-none d-md-block">
-          <img
-          src="{{ url_for('static', filename='assets/images/works/k15t/newsletter/purple-circle-mid-right.svg') }}"
-          alt=""/>
-        </div>
-        <div class="dot-left d-none d-md-block">
-          <img
-          src="{{ url_for('static', filename='assets/images/works/k15t/newsletter/lavender-dot-mid-left.svg') }}"
-          alt=""/>
-        </div>
-        <div class="row justify-content-center animated-newsletter-sign-up-wrapper js-form-content">
-          <div class="coll animated-newsletter-sign-up__heading">
-            <p>Be the first to know.<br>Sign up for our newsletter:</p>
-          </div>
-          <div class="col-sm-12 col-md-8 col-lg-6">  
-            <form> 
-              <div class="k15t_input"> 
-               <label for="k15t_newsletter_email">Email <span class="email-required">*</span> </label> 
-               <input class="k15t_input_field" type="text" autocomplete="off" placeholder="Your email" value=""> 
-              </div> 
-
-               <button ontouchstart="" class="k15t-subscribe-button k15t-newsletter-wrapper">
-                  <span>Subscribe</span>
-                </button>
-
-              </form>
-          </div>
-        </div>
-          <div class="wave-bottom d-none d-md-block">
+    <div class="container-fluid k15t-newsletter-button">
+      <div class="row justify-content-center">
+          <button 
+          ontouchstart=""
+          class="k15t-subscribe-button k15t-newsletter-wrapper"
+          type="submit"
+          value="submit">
+            <span name="Subscribe to K15t newsletter" aria-label="submit the form">Subscribe</span>
+          </button>
+          <div class="tap-line d-none d-md-block">
             <img
-            src="{{ url_for('static', filename='assets/images/works/k15t/newsletter/yellow-wave-bottom-left.svg') }}"
-            alt=""/>
-          </div>
-          <div class="dot-bottom d-none d-md-block">
-            <img
-            src="{{ url_for('static', filename='assets/images/works/k15t/newsletter/red-dot-bottom-right.svg') }}"
+            src="{{ url_for('static', filename='assets/images/works/k15t/newsletter/line.svg') }}"
             alt=""/>
           </div>
       </div>
     </div>
-    <div class="grid-bottom d-none d-md-block">
-        <img
-        src="{{ url_for('static', filename='assets/images/works/k15t/newsletter/dot-grid.svg') }}"
-        alt=""/>
+    <div class="container-fluid k15t-newsletter-banner white-background">
+      <div class="row arrow-top">
+        <div class="col">
+          <span>Animation and programming</span>
+        </div>
+      </div>
+      <div class="arrow"></div>
+      <div class="container animated-newsletter-sign-up-full">
+        <div class="grid-right d-none d-md-block">
+          <img
+          src="{{ url_for('static', filename='assets/images/works/k15t/newsletter/dot-grid.svg') }}"
+          alt=""/>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-10 animated-newsletter-sign-up">
+            <div class="arrow-top d-none d-md-block">
+              <img
+              src="{{ url_for('static', filename='assets/images/works/k15t/newsletter/blue-arrow-top.svg') }}"
+              alt=""/>
+            </div>
+            <div class="circle-right d-none d-md-block">
+              <img
+              src="{{ url_for('static', filename='assets/images/works/k15t/newsletter/purple-circle-mid-right.svg') }}"
+              alt=""/>
+            </div>
+            <div class="dot-left d-none d-md-block">
+              <img
+              src="{{ url_for('static', filename='assets/images/works/k15t/newsletter/lavender-dot-mid-left.svg') }}"
+              alt=""/>
+            </div>
+            <div class="row justify-content-center animated-newsletter-sign-up-wrapper js-form-content">
+              <div class="coll animated-newsletter-sign-up__heading">
+                <p>Be the first to know.<br>Sign up for our newsletter:</p>
+              </div>
+              <div class="col-sm-12 col-md-8 col-lg-6">  
+                <form> 
+                  <div class="k15t_input"> 
+                   <label for="k15t_newsletter_email">Email <span class="email-required">*</span> </label> 
+                   <input class="k15t_input_field" type="text" autocomplete="off" placeholder="Your email" value=""> 
+                  </div> 
+    
+                   <button ontouchstart="" class="k15t-subscribe-button k15t-newsletter-wrapper">
+                      <span>Subscribe</span>
+                    </button>
+    
+                  </form>
+              </div>
+            </div>
+              <div class="wave-bottom d-none d-md-block">
+                <img
+                src="{{ url_for('static', filename='assets/images/works/k15t/newsletter/yellow-wave-bottom-left.svg') }}"
+                alt=""/>
+              </div>
+              <div class="dot-bottom d-none d-md-block">
+                <img
+                src="{{ url_for('static', filename='assets/images/works/k15t/newsletter/red-dot-bottom-right.svg') }}"
+                alt=""/>
+              </div>
+          </div>
+        </div>
+        <div class="grid-bottom d-none d-md-block">
+            <img
+            src="{{ url_for('static', filename='assets/images/works/k15t/newsletter/dot-grid.svg') }}"
+            alt=""/>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
-
+  </main>
 {% endblock content %}
 
 {% block credits %}
-<div class="container">
+<aside class="container">
   <div class="row">
     <div class="col-6 col-md-2 credits">
         <span>Designer of animation</span>
@@ -156,8 +146,5 @@
       </ul>
     </div>
   </div>
-</div>
-
-{# opening the container div to close it in the base template to place the footer within the grid #}
-<div class="container">
+</aside>
 {% endblock credits %}
