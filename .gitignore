@@ -3,7 +3,7 @@
 # Development environment
 .nova
 .nova/Configuration.json
-node_modules
+node_modules/
 
 # My personal blog is not managed in this repo
 Blog/
