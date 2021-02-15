@@ -12,11 +12,14 @@
       defer
       src='https://static.cloudflareinsights.com/beacon.min.js'
       data-cf-beacon='{"token": "4e7bbce03f0843dbad2ba986d8bb68ee"}'></script>
+    
+    {# Metadata #}  
+    <meta name="author" content="Roman Serazhiev">
 
     {# CSS and JS links #}
 		{% block style %}<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='src/styles/main.css') }}">{% endblock %}
     <script src="{{ url_for('static', filename='libraries/jquery/jquery-3.4.1.slim.min.js') }}"></script>
-
+    
     {# favicon #}
     <link rel="shortcut icon" href="{{ url_for('static', filename='assets/images/about/userpic-2x.jpg') }}" type="image/x-icon">
 
