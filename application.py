@@ -21,11 +21,11 @@ def works():
 
 @app.route("/mac-leaflet")
 def macLeaflet():
-  return render_template("pages/mac-leaflet.html")
+  return render_template("pages/mac_leaflet.html")
 
 @app.route("/k15t/atlassian-virtual-summit")
 def k15tAtlassianVirtualSummit():
-  return render_template("pages/atlassian-virtual-summit.html")
+  return render_template("pages/atlassian_virtual_summit.html")
   
 @app.route("/k15t/newsletter")
 def k15tNewsletter():
@@ -34,7 +34,7 @@ def k15tNewsletter():
   
 @app.route("/k15t/team-up-forum")
 def k15tTeamUpForum():
-  return render_template("pages/team-up-forum.html")
+  return render_template("pages/team_up_forum.html")
 
 @app.route("/k15t/careers")
 def k15tCareers():

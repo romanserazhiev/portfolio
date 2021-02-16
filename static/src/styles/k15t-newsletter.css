@@ -1,16 +1,10 @@
 :root {
-  --maintextcolor:          rgb(   37,   233,   163);
-  
-  --linkcolor:              rgb(   124,   56,   184);
-  --linkcolorhover:         rgb(   244,   18,    36);
-  --linkbordercolor:        rgba(  124,   56,   184,   0.3);
-  --linkbordercolorhover:   rgba(  244,   18,    36,   0.3);
-  
-  --backgroundcolor:    rgb(     0,   12,    52);
-  
-  
-  
-  
+  --maintextcolor: rgb(37, 233, 163);
+  --linkcolor: rgb(124, 56, 184);
+  --linkcolorhover: rgb(244, 18, 36);
+  --linkbordercolor: rgba(124, 56, 184, 0.3);
+  --linkbordercolorhover: rgba(244, 18, 36, 0.3);
+  --backgroundcolor: rgb(0, 12, 52);
 }
 
 body {
@@ -37,7 +31,7 @@ body img {
 }
 
 .arrow {
-  background: var(--linkcolor);
+  background-color: var(--linkcolor);
 }
 
 .k15t-newsletter-button {
@@ -57,10 +51,10 @@ body img {
   border: none;
   border-radius: 65px;
   height: 65px;
-  box-shadow: 0 6px 0 0 #29a376,0 9px 10px 0 rgba(21,132,93,.8);
+  box-shadow: 0 6px 0 0 #29a376, 0 9px 10px 0 rgba(21, 132, 93, 0.8);
   font-size: 1.125rem;
   margin-bottom: 0;
-  transition: box-shadow .1s,transform .1s;
+  transition: box-shadow 0.1s, transform 0.1s;
   width: 450px;
   -webkit-appearance: button;
 }
@@ -71,15 +65,13 @@ body img {
   }
 }
 
-
-
 .k15t-subscribe-button:hover {
   background-color: #33ffc5;
   cursor: pointer;
 }
 
 .k15t-subscribe-button:active {
-  box-shadow: 0 3px 0 0 #2eb785,0 6px 8px 0 rgba(21,132,93,.8);
+  box-shadow: 0 3px 0 0 #2eb785, 0 6px 8px 0 rgba(21, 132, 93, 0.8);
   transform: translateY(3px);
 }
 
@@ -99,15 +91,6 @@ body img {
   bottom: 262px;
 }
 
-/*
-@media (min-width: 0) and (max-width: 576px) {
-  .tap-line > img {
-    bottom: 386px;
-    left: 80px;
-  }
-}
-*/
-
 .animated-newsletter-sign-up-full {
   margin-top: 5em;
   padding-bottom: 10em;
@@ -115,19 +98,21 @@ body img {
 
 .animated-newsletter-sign-up {
   border: none;
-  background: #000C34;
-  box-shadow: 0 70px 100px -50px rgba(0, 12, 52, .5);
+  background-color: #000c34;
+  box-shadow: 0 70px 100px -50px rgba(0, 12, 52, 0.5);
   padding: 5em 3em 4em 3em;
   position: relative;
-  transition: background .3s;
+  transition: background 0.3s;
   z-index: 61;
 }
 
-.animated-newsletter-sign-up-full > .grid-right, .grid-bottom {
+.animated-newsletter-sign-up-full > .grid-right,
+.grid-bottom {
   height: 0;
 }
 
-.animated-newsletter-sign-up-full > .grid-right > img, .grid-bottom > img {
+.animated-newsletter-sign-up-full > .grid-right > img,
+.grid-bottom > img {
   width: 250px;
 }
 
@@ -149,19 +134,26 @@ body img {
   position: relative;
 }
 
-.animated-newsletter-sign-up-full .animated-newsletter-sign-up > 
-  .arrow-top, .circle-right, .dot-left, .wave-bottom, .dot-bottom {
-    height: 0;
+.animated-newsletter-sign-up-full .animated-newsletter-sign-up > .arrow-top,
+.circle-right,
+.dot-left,
+.wave-bottom,
+.dot-bottom {
+  height: 0;
 }
 
-.animated-newsletter-sign-up-full .animated-newsletter-sign-up > 
-  .arrow-top > img {
-    position: relative;
-  }
-  
+.animated-newsletter-sign-up-full
+  .animated-newsletter-sign-up
+  > .arrow-top
+  > img {
+  position: relative;
+}
+
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .animated-newsletter-sign-up-full .animated-newsletter-sign-up > 
-  .arrow-top > img {
+  .animated-newsletter-sign-up-full
+    .animated-newsletter-sign-up
+    > .arrow-top
+    > img {
     bottom: 140px;
     right: 200px;
     width: 150px;
@@ -169,16 +161,20 @@ body img {
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .animated-newsletter-sign-up-full .animated-newsletter-sign-up > 
-  .arrow-top > img {
+  .animated-newsletter-sign-up-full
+    .animated-newsletter-sign-up
+    > .arrow-top
+    > img {
     bottom: 180px;
     right: 200px;
     width: 250px;
   }
 }
 
-.animated-newsletter-sign-up-full .animated-newsletter-sign-up > 
-.circle-right > img {
+.animated-newsletter-sign-up-full
+  .animated-newsletter-sign-up
+  > .circle-right
+  > img {
   left: 800px;
   position: relative;
   top: 150px;
@@ -186,24 +182,30 @@ body img {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .animated-newsletter-sign-up-full .animated-newsletter-sign-up > 
-.circle-right > img {
-  left: 500px;
-  width: 130px;
-  top: 100px;
+  .animated-newsletter-sign-up-full
+    .animated-newsletter-sign-up
+    > .circle-right
+    > img {
+    left: 500px;
+    width: 130px;
+    top: 100px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .animated-newsletter-sign-up-full .animated-newsletter-sign-up > 
-.circle-right > img {
-  left: 650px;
+  .animated-newsletter-sign-up-full
+    .animated-newsletter-sign-up
+    > .circle-right
+    > img {
+    left: 650px;
   }
 }
 
 @media (min-width: 1200px) {
-  .animated-newsletter-sign-up-full .animated-newsletter-sign-up > 
-  .arrow-top > img {
+  .animated-newsletter-sign-up-full
+    .animated-newsletter-sign-up
+    > .arrow-top
+    > img {
     bottom: 185px;
     position: relative;
     right: 300px;
@@ -211,31 +213,39 @@ body img {
   }
 }
 
-.animated-newsletter-sign-up-full .animated-newsletter-sign-up > 
-.dot-left > img {
+.animated-newsletter-sign-up-full
+  .animated-newsletter-sign-up
+  > .dot-left
+  > img {
   position: relative;
   right: 100px;
   top: 150px;
   width: 50px;
 }
 
-.animated-newsletter-sign-up-full .animated-newsletter-sign-up 
-.wave-bottom > img {
+.animated-newsletter-sign-up-full
+  .animated-newsletter-sign-up
+  .wave-bottom
+  > img {
   width: 250px;
   top: 20px;
   position: relative;
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .animated-newsletter-sign-up-full .animated-newsletter-sign-up 
-.wave-bottom > img {
+  .animated-newsletter-sign-up-full
+    .animated-newsletter-sign-up
+    .wave-bottom
+    > img {
     width: 150px;
     top: 40px;
   }
 }
 
-.animated-newsletter-sign-up-full .animated-newsletter-sign-up 
-.dot-bottom > img {
+.animated-newsletter-sign-up-full
+  .animated-newsletter-sign-up
+  .dot-bottom
+  > img {
   width: 50px;
   left: 600px;
   position: relative;
@@ -243,20 +253,22 @@ body img {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  animated-newsletter-sign-up-full .animated-newsletter-sign-up 
-.dot-bottom > img {
+  animated-newsletter-sign-up-full
+    .animated-newsletter-sign-up
+    .dot-bottom
+    > img {
     left: 400px;
   }
 }
 
-.k15t_input_field, .k15t_input_field:focus {
-  border-bottom: 1px solid #25e9a4; 
+.k15t_input_field,
+.k15t_input_field:focus {
+  border-bottom: 1px solid #25e9a4;
 }
 
 .k15t_input {
   color: white;
   padding-bottom: 2em;
-  
 }
 
 .k15t_input + .k15t-subscribe-button {
@@ -269,7 +281,7 @@ body img {
 }
 
 .k15t_input_field {
-  background-color: #555D78;
+  background-color: #555d78;
   color: white;
   width: 100%;
   height: 39px;
@@ -283,8 +295,8 @@ body img {
 }
 
 .k15t_input_field:placeholder-shown {
-  background-color: #555D78;
-  border-bottom: 1px solid #F2F3F7;
+  background-color: #555d78;
+  border-bottom: 1px solid #f2f3f7;
   color: white;
   vertical-align: middle;
 }
@@ -342,10 +354,9 @@ label {
 
 .credits {
   padding: 1rem 15px 0;
-  
 }
 
-.credits>span {
+.credits > span {
   color: var(--linkcolor);
 }
 
