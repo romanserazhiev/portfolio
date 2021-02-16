@@ -9,6 +9,7 @@ app = Flask(__name__, template_folder="src/templates")
 def index():
   tshirts = ['cat_tshirt.png', 'lama_tshirt.png']
   socialnetworks = {
+    'github': 'https://github.com/romanserazhiev',
     'telegram': 'https://t.me/romaserazhiev',
     'twitter': 'https://twitter.com/romanserazhiev',
     'youtube': 'https://www.youtube.com/user/romaserazhiev'
@@ -91,7 +92,6 @@ if app.config['DEBUG']:
       '/': os.path.join(os.path.dirname(__file__), '')
     })
 
-# injecting “now” to point to datetime.utcnow()
 @app.context_processor
 def inject_now():
     return dict(now=datetime.utcnow())
