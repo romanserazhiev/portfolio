@@ -1,5 +1,16 @@
 // Bootstrap SCSS
-@import '../libraries/bootstrap/scss/bootstrap';
+
+// All
+@import '../../../libraries/bootstrap/scss/bootstrap';
+
+// Required
+// @import '../../../libraries/bootstrap/scss/functions';
+// @import '../../../libraries/bootstrap/scss/variables';
+// @import '../../../libraries/bootstrap/scss/mixins';
+
+// Optional
+// @import '../../../libraries/bootstrap/scss/grid';
+
 
 @import 'variables';
 

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{# title of the page #}
+{% block title %}{{ title }}{% endblock title %}
+
+{# section with the list of works #}
+{% block content %}
+  <main>
+    <div class="container-fluid big-background">
+      <div class="row work-title">
+        <h1>Graphical design for&nbsp;the &ldquo;Podcast Around Design&rdquo;</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row podcast-main-image justify-content-between">
+        <div class="col-md-6 podcast-iphone-cell">
+          <img class="podcast-cover-image-iphone" src="{{ url_for('static', filename='assets/images/works/podcasts/podcast-around-design-cover-iphone.png') }}" />
+        </div>
+      </div>
+    </div>
+  </main>
+{% endblock content %}
+
+{% block credits %}
+  <aside class="container">
+    <div class="row">
+      <div class="col-sm-2 credits">
+        <span>Designer</span>
+        <ul>
+          <li>Roman Serazhiev</li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+{% endblock credits %}

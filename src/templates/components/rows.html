@@ -4,20 +4,21 @@
 #}
 
 {% macro render_row(works) -%}
+
 <div class="row">
 {% for work in works %}
 
 {# Checking if the amount of 'item_count' is 1. If yes, this work occupies full width of the screen #}
 {% if works|selectattr('item_count')|list|length == 1 %}
-  <div class="col-md-12 work-announce">
+  <section class="col-md-12 work-announce">
 
 {# Checking if the amount of 'item_count' is 2. If yes, each work occupies half of the screen starting with medium screen size #}
 {% elif works|selectattr('item_count')|list|length == 2 %}
-  <div class="col-md-6 work-announce">
+  <section class="col-md-6 work-announce">
 
 {# Checking if the amount of 'item_count' is 3. If yes, each work occupies a third of the screen starting with medium screen size #}
 {% elif works|selectattr('item_count')|list|length == 3 %}
-  <div class="col-md-4 work-announce">
+  <section class="col-md-4 work-announce">
   {% endif %}
     {# Setting the path to the image of the cover by taking the file name from the database #}
     {% set pathImage = 'assets/images/works/' + work.image_url_path %}
@@ -27,7 +28,10 @@
         {% if work.video is defined %}
           {{ work.video_code|safe }}
         {% else %}
-          <img src="{{ url_for('static', filename=pathImage) }}"/>
+          <img
+            src="{{ url_for('static', filename=pathImage) }}"
+            alt=""
+          />
         {% endif %}
       </div>
       <div class="announce-text">
@@ -39,8 +43,7 @@
         {% endif %}      
         
         <div class="date">{{ fullDate|safe }}</div>
-        <h1 class="announce-title">
-          <span>
+        <h2 class="announce-title">
             <div class="announce-icons">
               {% if work.type is defined %}
                 {% set typeImage = 'assets/images/works/' + work.type + '.svg'%}
@@ -53,12 +56,11 @@
               {% endif %}
             </div>
             {{ work.title|safe }}
-          </span>
-        </h1> 
+        </h2> 
         <span class="announce-subtitle">{{ work.subtitle|safe }}</span> 
       </div>
     </a>
-  </div>
+  </section>
 {% endfor %}
-</div>  
+</div>
 {%- endmacro %}

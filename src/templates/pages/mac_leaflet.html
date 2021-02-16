@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{# title of the page #}
+{% block title %}Leaflet for new computers{% endblock title %}
+
+{# section with the list of works #}
+{% block content %}
+  <section class="container">
+    <div class="row role-title">
+      <div class="col-md-12">
+        <h1>Laptop leaflet for new employees</h1>
+      </div>
+    </div>
+    <div class="row description-company">
+        <div class="col-md-12">
+            <span>Task: create a&nbsp;laptop leaflet for new employees to&nbsp;get them started quicker with the initial computer set&nbsp;up</span>
+        </div>
+    </div>
+  </section>
+  
+  <main class="leaflet">
+      <div class="container-fluid background color-blue">
+          <div class="container">
+              <div class="row">
+                  <img 
+                    class="rotate-right"
+                    src="{{ url_for('static', filename='assets/images/works/leaflet/leaflet_new_mac.png') }}"
+                    alt="A white paper with black text 'Computer is ready for a new employee'"
+                  />
+              </div>
+          </div>
+      </div>
+  
+      <div class="container-fluid background color-black">
+          <div class="container">
+              <div class="row">
+                  <img
+                    class="rotate-left"
+                    src="{{ url_for('static', filename='assets/images/works/leaflet/leaflet_new_user.png') }}"
+                    alt="A white paper with black text 'Computer is ready for John'"
+                  />
+              </div>
+          </div>
+      </div>
+  
+      <div class="container-fluid background color-pink">
+          <div class="container">
+              <div class="row">
+                  <img
+                    class="rotate-perspective-up"
+                    src="{{ url_for('static', filename='assets/images/works/leaflet/leaflet_problem.png') }}"
+                    alt="A white paper with black text 'Computer is damaged'"
+                  />
+              </div>
+          </div>
+      </div>
+  
+      <div class="container-fluid background color-orange">
+          <div class="container">
+              <div class="row">
+                  <img
+                    class="rotate-left-less"
+                    src="{{ url_for('static', filename='assets/images/works/leaflet/leaflet_severe_problem.png') }}"
+                    alt="A white paper with black text 'Do not use, battery needs replacement'"
+                  />
+              </div>
+          </div>
+      </div>
+  </main>
+
+{% endblock content %}
+
+{# section with the list of works #}
+{% block credits %}
+  <aside class="container">
+    <div class="row">
+      <div class="col-sm-2 credits">
+        <span>Designer</span>
+        <ul>
+            <li>Roman Serazhiev</li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+{% endblock credits %}

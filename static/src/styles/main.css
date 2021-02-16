@@ -8517,48 +8517,20 @@ footer a:hover {
 body {
   font-family: var(--mainFontFamily);
 }
-body img {
+
+img {
   height: 100%;
   width: 100%;
 }
-body .image-description {
+
+.image-description {
   font-size: 0.8rem;
   margin-top: 0.5rem;
   margin-bottom: 3rem;
 }
-body .container,
-body .container-fluid {
-  /* 
-  .giant {
-      font-size: 3rem;
-      padding-bottom: 6rem;
 
-      &-white {
-          color: white;
-      }
-  }
-
-  @include media-breakpoint-up(sm) {
-      .giant {
-          font-size: 4rem;
-      }
-  }
-
-  @include media-breakpoint-up(md) {
-      .giant {
-          font-size: 6rem;
-      }
-  }
-
-  @include media-breakpoint-up(lg) {
-      .giant {
-          font-size: 8rem;
-      }
-  }
-  */
-}
-body .container a,
-body .container-fluid a {
+.container a,
+.container-fluid a {
   text-decoration: none;
   color: #000;
   border-color: rgba(0, 0, 0, 0.3);
@@ -8566,53 +8538,53 @@ body .container-fluid a {
   -webkit-transition: color 0.3s ease, border-color 0.3s ease;
   transition: color 0.3s ease, border-color 0.3s ease;
 }
-body .container a:hover,
-body .container-fluid a:hover {
+.container a:hover,
+.container-fluid a:hover {
   color: #f41224;
   border-color: rgba(244, 18, 36, 0.3);
 }
-body .container .intro,
-body .container-fluid .intro {
+.container .intro,
+.container-fluid .intro {
   padding-top: 2rem;
   padding-bottom: 3rem;
 }
-body .container .intro h1,
-body .container-fluid .intro h1 {
+.container .intro h1,
+.container-fluid .intro h1 {
   margin-bottom: 0;
 }
-body .container .intro .social-section a,
-body .container-fluid .intro .social-section a {
+.container .intro .social-section a,
+.container-fluid .intro .social-section a {
   border-bottom: 0;
 }
-body .container .intro .social-section a img,
-body .container-fluid .intro .social-section a img {
+.container .intro .social-section a img,
+.container-fluid .intro .social-section a img {
   transition: all 0.8s cubic-bezier(0, 0, 0, 1);
 }
-body .container .intro .social-section a img:hover,
-body .container-fluid .intro .social-section a img:hover {
+.container .intro .social-section a img:hover,
+.container-fluid .intro .social-section a img:hover {
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
   transform: scale(1.5);
 }
-body .container .intro .social-section .social-icon,
-body .container-fluid .intro .social-section .social-icon {
+.container .intro .social-section .social-icon,
+.container-fluid .intro .social-section .social-icon {
   width: 30px;
 }
-body .container .intro .about-section img,
-body .container-fluid .intro .about-section img {
+.container .intro .about-section img,
+.container-fluid .intro .about-section img {
   border-radius: 50%;
   height: unset;
   width: 4rem;
 }
-body .container .intro .about-section h1,
-body .container-fluid .intro .about-section h1 {
+.container .intro .about-section h1,
+.container-fluid .intro .about-section h1 {
   bottom: 4rem;
   font-size: 3rem;
   left: 5rem;
   position: relative;
 }
-body .container .work-announce,
-body .container-fluid .work-announce {
+.container .work-announce,
+.container-fluid .work-announce {
   overflow: hidden;
   position: relative;
   padding-bottom: 3rem;
@@ -8623,27 +8595,27 @@ body .container-fluid .work-announce {
   text-align: left;
   vertical-align: top;
 }
-body .container .work-announce .announce-icons,
-body .container-fluid .work-announce .announce-icons {
+.container .work-announce .announce-icons,
+.container-fluid .work-announce .announce-icons {
   display: flex;
 }
-body .container .work-announce .announce-title img,
-body .container-fluid .work-announce .announce-title img {
+.container .work-announce .announce-title img,
+.container-fluid .work-announce .announce-title img {
   width: 30px;
   opacity: 0.3;
 }
-body .container .work-announce .announce-title img:hover,
-body .container-fluid .work-announce .announce-title img:hover {
+.container .work-announce .announce-title img:hover,
+.container-fluid .work-announce .announce-title img:hover {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
 }
-body .container .work-announce a:hover,
-body .container-fluid .work-announce a:hover {
+.container .work-announce a:hover,
+.container-fluid .work-announce a:hover {
   color: black;
 }
-body .container .work-announce a.not-active,
-body .container-fluid .work-announce a.not-active {
+.container .work-announce a.not-active,
+.container-fluid .work-announce a.not-active {
   color: #000;
   border-color: rgba(0, 0, 0, 0.3);
   border-bottom: none;
@@ -8651,95 +8623,93 @@ body .container-fluid .work-announce a.not-active {
   pointer-events: none;
   display: block;
 }
-body .container .work-announce a.not-active img,
-body .container-fluid .work-announce a.not-active img {
+.container .work-announce a.not-active img,
+.container-fluid .work-announce a.not-active img {
   filter: grayscale(100%);
 }
-body .container .work-announce a.not-active span:hover,
-body .container-fluid .work-announce a.not-active span:hover {
+.container .work-announce a.not-active span:hover,
+.container-fluid .work-announce a.not-active span:hover {
   border-color: rgba(244, 18, 36, 0.3);
 }
-body .container .work-announce a.not-active .announce-title span,
-body .container-fluid .work-announce a.not-active .announce-title span {
+.container .work-announce a.not-active .announce-title,
+.container-fluid .work-announce a.not-active .announce-title {
   border-bottom: none;
   color: #000;
   opacity: 0.5;
 }
-body .container .work-announce img,
-body .container-fluid .work-announce img {
+.container .work-announce img,
+.container-fluid .work-announce img {
   display: block;
   transition: all 0.8s cubic-bezier(0, 0, 0, 1);
   width: 100%;
   height: 100%;
 }
-body .container .work-announce .announce-text,
-body .container-fluid .work-announce .announce-text {
+.container .work-announce .announce-text,
+.container-fluid .work-announce .announce-text {
   padding-top: 0.75rem;
 }
-body .container .work-announce .announce-text .date,
-body .container-fluid .work-announce .announce-text .date {
+.container .work-announce .announce-text .date,
+.container-fluid .work-announce .announce-text .date {
   opacity: 0.3;
   font-size: 0.9em;
   margin-top: 0.2em;
   margin-bottom: 0.1em;
 }
-body .container .work-announce .announce-text .announce-title,
-body .container-fluid .work-announce .announce-text .announce-title {
+.container .work-announce .announce-text .announce-title,
+.container-fluid .work-announce .announce-text .announce-title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-transition: color 0.3s ease, border-color 0.3s ease;
+  transition: color 0.3s ease, border-color 0.3s ease;
+  display: inline;
   font-size: 1.5em;
   left: -2px;
   line-height: 1.34;
   position: relative;
 }
-body .container .work-announce .announce-text .announce-title span,
-body .container-fluid .work-announce .announce-text .announce-title span {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-transition: color 0.3s ease, border-color 0.3s ease;
-  transition: color 0.3s ease, border-color 0.3s ease;
-}
 @media (min-width: 992px) {
-  body .container .work-announce .announce-text .announce-title,
-body .container-fluid .work-announce .announce-text .announce-title {
+  .container .work-announce .announce-text .announce-title,
+.container-fluid .work-announce .announce-text .announce-title {
     font-size: 2em;
   }
 }
-body .container .work-announce .announce-text .announce-subtitle,
-body .container-fluid .work-announce .announce-text .announce-subtitle {
+.container .work-announce .announce-text .announce-subtitle,
+.container-fluid .work-announce .announce-text .announce-subtitle {
   opacity: 0.5;
   display: block;
 }
-body .container .work-announce > a:hover img,
-body .container-fluid .work-announce > a:hover img {
+.container .work-announce > a:hover img,
+.container-fluid .work-announce > a:hover img {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
 }
-body .container .work-announce > a:hover .not-active img,
-body .container-fluid .work-announce > a:hover .not-active img {
+.container .work-announce > a:hover .not-active img,
+.container-fluid .work-announce > a:hover .not-active img {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
 }
-body .container .work-announce > a:hover .work-type-icon,
-body .container-fluid .work-announce > a:hover .work-type-icon {
+.container .work-announce > a:hover .work-type-icon,
+.container-fluid .work-announce > a:hover .work-type-icon {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
 }
-body .container .work-announce > a:hover .announce-title span,
-body .container-fluid .work-announce > a:hover .announce-title span {
+.container .work-announce > a:hover .announce-title,
+.container-fluid .work-announce > a:hover .announce-title {
   color: #f41224;
   border-color: rgba(244, 18, 36, 0.3);
 }
-body .container .preview,
-body .container-fluid .preview {
+.container .preview,
+.container-fluid .preview {
   position: relative;
   overflow: hidden;
   display: block;
   border: none;
   box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.1);
 }
-body .container .preview:after,
-body .container-fluid .preview:after {
+.container .preview:after,
+.container-fluid .preview:after {
   content: "";
   display: block;
   position: absolute;
@@ -8751,39 +8721,39 @@ body .container-fluid .preview:after {
   pointer-events: none;
   z-index: 2;
 }
-body .container .k15t-user-group,
-body .container-fluid .k15t-user-group {
+.container .k15t-user-group,
+.container-fluid .k15t-user-group {
   position: relative;
   padding-bottom: 56%;
 }
-body .container .k15t-user-group iframe,
-body .container .k15t-user-group object,
-body .container .k15t-user-group embed,
-body .container-fluid .k15t-user-group iframe,
-body .container-fluid .k15t-user-group object,
-body .container-fluid .k15t-user-group embed {
+.container .k15t-user-group iframe,
+.container .k15t-user-group object,
+.container .k15t-user-group embed,
+.container-fluid .k15t-user-group iframe,
+.container-fluid .k15t-user-group object,
+.container-fluid .k15t-user-group embed {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-body .container .k15t-product-webinar img,
-body .container-fluid .k15t-product-webinar img {
+.container .k15t-product-webinar img,
+.container-fluid .k15t-product-webinar img {
   height: 80%;
   position: relative;
   top: 30px;
 }
-body .container .k15t-team-up-forum img,
-body .container-fluid .k15t-team-up-forum img {
+.container .k15t-team-up-forum img,
+.container-fluid .k15t-team-up-forum img {
   padding: 20px;
 }
-body .container .k15t-support,
-body .container-fluid .k15t-support {
+.container .k15t-support,
+.container-fluid .k15t-support {
   background-color: black;
 }
-body .container .k15t-support img,
-body .container-fluid .k15t-support img {
+.container .k15t-support img,
+.container-fluid .k15t-support img {
   padding: 2em;
 }
 
